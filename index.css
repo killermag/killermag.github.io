@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+}
+
+html, body {
+    background-color: violet;
+    width: 100%;
+    height: 100%;
+}
+
+/* Youtube navbar start */
+.navbar {
+    background-color: #212121;
+    height: 56px;
+    padding: 0 16px 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Youtube logo section */
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* dropdown icon */
+.burger {
+    width: 24px;
+    fill: white;
+}
+
+/* Youtube brand logo */
+.youtube-logo {
+    fill: white;
+    padding-left: 1rem;
+    width:  84px;
+}
+/* Youtube logo section end */
+
+/* Search box */
+.search-container {
+    display: flex;
+    width: 38%;
+}
+
+/* Search bar */
+.search-bar {
+    width: 90%;
+    height: 1.6rem;
+}
+
+/* Search button */
+.search-button {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    width: calc(100% - 90%)
+}
+
+/* Search logo */
+.logo {
+    width: 24px;
+}
+
+/* Sign in box */ 
+.user-container {
+    display: flex;
+}
+
+.control-logos{
+    fill: white;
+    width: 24px;
+    padding-right: 15px;
+}
+
+.sign-in-button {
+    display: flex;
+    padding: 0 10px 0 10px;
+    align-items: center;
+    border: 1px solid rgb(0, 195, 255);
+}
+
+.sign-in-button .sign-in-logo {
+   height: 2.2rem; 
+   padding: 0 8px 0 0;
+   fill: rgb(0, 195, 255) ;
+}
+
+.sign-in-button .sign-in-text {
+   color:rgb(0, 195, 255);
+}
+/* Youtube Navbar end */
+
+
+/* Main container for content */
+.main {
+    margin: 16px 60px 0 40px;
+    display: flex;
+    background-color: wheat;
+    justify-content: space-between;
+
+    height: calc(100% - (16px + 56px));
+    overflow-y: scroll;
+ 
+}
+
+/* Left video container */
+.left {
+    background: gray;
+    width: 71.4%;
+    height: 100%;
+
+}
+
+/* actual Video */
+#video {
+    background: aqua;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+/* video information  */
+.video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: green;
+    height: 5rem;
+}
+
+/* video title and views */
+.video-title-metadata {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    background-color: white;
+    height: 50%;
+    align-self: flex-start;
+}
+
+/* video-title */
+.video-title {
+    font-weight: 500;
+}
+
+/* video controls */
+.video-controls {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: aqua;
+    align-self: flex-end;
+}
+
+/* video control buttons */ 
+.video-controls-buttons {
+    display: flex;
+}
+
+/* individual buttons */
+.button {
+    display: flex;
+    align-items: center;
+    padding-right: 18px;
+}
+.like-button {
+    width: 30px;
+}
+
+/* likes count */
+.like-count {
+    padding-left: 4px;
+}
+
+/* Video uploader section */
+.user-section {
+    background-color: purple;
+}
+
+
+/* video comment section */
+.comment-section  {
+    background-color: greenyellow;
+}
+
+/* Right side of main container */
+.video-suggestions {
+    height: 100%;
+    width: calc(100% - 73.4%);
+    background-color: yellow;
+}
+
+
+@media (max-width: 1000px) {
+    .video-suggestions {
+        display: none;
+    }
+}
+
+
+
+
+
+
