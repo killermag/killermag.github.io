@@ -1,113 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="https://www.youtube.com/s/desktop/2ed2f887/img/favicon_32.png">
-  <link rel="stylesheet" href="index.css">
-  <title>why you NEED math for programming</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.youtube.com/s/desktop/2ed2f887/img/favicon_32.png">
+    <link rel="stylesheet" href="index.css">
+    <title>why you NEED math for programming</title>
 </head>
-<body >
 
-  <nav class="navbar">
+<body>
 
-    <div class="navbar-brand">
-      <div class="burger">
-        <yt-icon id="guide-icon" icon="yt-icons:menu"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
-      </div>
-      <div class="youtube-logo">
-        <yt-icon id="logo-icon" class="style-scope ytd-topbar-logo-renderer"><svg viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon"><g class="style-scope yt-icon"><path fill="#FF0000" d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31 c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56 C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30 S64.31,19.77,63,14.87z" class="style-scope yt-icon"></path><polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57" class="style-scope yt-icon"></polygon></g><g class="style-scope yt-icon"><g id="youtube-paths" class="style-scope yt-icon"><path d="M92.69,48.03c-1.24-0.84-2.13-2.14-2.65-3.91c-0.52-1.77-0.79-4.12-0.79-7.06v-4 c0-2.97,0.3-5.35,0.9-7.15c0.6-1.8,1.54-3.11,2.81-3.93c1.27-0.82,2.94-1.24,5.01-1.24c2.04,0,3.67,0.42,4.9,1.26 c1.23,0.84,2.13,2.15,2.7,3.93c0.57,1.78,0.85,4.16,0.85,7.12v4c0,2.94-0.28,5.3-0.83,7.08c-0.55,1.78-1.45,3.09-2.7,3.91 c-1.24,0.82-2.93,1.24-5.06,1.24C95.65,49.29,93.93,48.87,92.69,48.03z M99.66,43.71c0.34-0.9,0.52-2.37,0.52-4.4v-8.59 c0-1.98-0.17-3.42-0.52-4.34c-0.34-0.91-0.95-1.37-1.82-1.37c-0.84,0-1.43,0.46-1.78,1.37c-0.34,0.91-0.52,2.36-0.52,4.34v8.59 c0,2.04,0.16,3.51,0.49,4.4c0.33,0.9,0.93,1.35,1.8,1.35C98.71,45.06,99.31,44.61,99.66,43.71z" class="style-scope yt-icon"></path><path d="M188.16,37.13v1.39c0,1.77,0.05,3.09,0.16,3.98c0.1,0.88,0.32,1.53,0.65,1.93 c0.33,0.4,0.84,0.61,1.53,0.61c0.93,0,1.57-0.36,1.91-1.08c0.34-0.72,0.53-1.92,0.56-3.6l5.35,0.31 c0.03,0.24,0.04,0.57,0.04,0.99c0,2.55-0.7,4.45-2.09,5.71c-1.39,1.26-3.36,1.89-5.91,1.89c-3.06,0-5.2-0.96-6.43-2.88 c-1.23-1.92-1.84-4.88-1.84-8.9v-4.81c0-4.14,0.64-7.15,1.91-9.06c1.27-1.9,3.45-2.85,6.54-2.85c2.13,0,3.76,0.39,4.9,1.17 c1.14,0.78,1.94,1.99,2.41,3.64c0.46,1.65,0.7,3.93,0.7,6.83v4.72H188.16z M188.95,25.53c-0.31,0.39-0.52,1.03-0.63,1.91 c-0.11,0.88-0.16,2.23-0.16,4.02v1.98h4.54v-1.98c0-1.77-0.06-3.11-0.18-4.02c-0.12-0.91-0.34-1.56-0.65-1.93 c-0.31-0.37-0.8-0.56-1.46-0.56C189.75,24.94,189.26,25.14,188.95,25.53z" class="style-scope yt-icon"></path><path d="M77.59,36.61l-7.06-25.49h6.16l2.47,11.55c0.63,2.85,1.09,5.27,1.39,7.28h0.18 c0.21-1.44,0.67-3.85,1.39-7.24l2.56-11.6h6.16L83.7,36.61v12.23h-6.11V36.61z" class="style-scope yt-icon"></path><path d="M126.45,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8 c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79 c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H126.45z" class="style-scope yt-icon"></path><path d="M158.27,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8 c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79 c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H158.27z" class="style-scope yt-icon"></path><path d="M143.31,16.11h-6.16v32.72h-6.07V16.11h-6.16v-4.99h18.38V16.11z" class="style-scope yt-icon"></path><path d="M178.8,25.69c-0.38-1.74-0.98-3-1.82-3.78c-0.84-0.78-1.99-1.17-3.46-1.17c-1.14,0-2.2,0.32-3.19,0.97 c-0.99,0.64-1.75,1.49-2.29,2.54h-0.05l0-14.52h-5.98v39.11h5.12l0.63-2.61h0.13c0.48,0.93,1.2,1.66,2.16,2.2 c0.96,0.54,2.02,0.81,3.19,0.81c2.1,0,3.64-0.97,4.63-2.9c0.99-1.93,1.48-4.95,1.48-9.06v-4.36 C179.36,29.84,179.17,27.43,178.8,25.69z M173.11,36.93c0,2.01-0.08,3.58-0.25,4.72c-0.16,1.14-0.44,1.95-0.83,2.43 c-0.39,0.48-0.91,0.72-1.57,0.72c-0.51,0-0.98-0.12-1.42-0.36c-0.43-0.24-0.79-0.6-1.06-1.08V27.71 c0.21-0.75,0.57-1.36,1.08-1.84c0.51-0.48,1.06-0.72,1.66-0.72c0.63,0,1.12,0.25,1.46,0.74c0.34,0.49,0.58,1.33,0.72,2.49 c0.13,1.17,0.2,2.83,0.2,4.99V36.93z" class="style-scope yt-icon"></path></g></g></g></svg><!--css-build:shady--></yt-icon>
-      </div>
-    </div>
-    <div class="search-container">
-      <input type="text" class="search-bar">
-      <div class="search-button">
-        <div class="logo">
-          <yt-icon class="style-scope ytd-searchbox"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
+    <nav class="navbar">
+
+        <div class="navbar-brand">
+            <div class="burger">
+                <yt-icon id="guide-icon" icon="yt-icons:menu"><svg viewBox="0 0 24 24"
+                        preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="style-scope yt-icon">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                    <!--css-build:shady-->
+                </yt-icon>
+            </div>
+            <div class="youtube-logo">
+                <yt-icon id="logo-icon" class="style-scope ytd-topbar-logo-renderer"><svg viewBox="0 0 200 60"
+                        preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g viewBox="0 0 200 60" preserveAspectRatio="xMidYMid meet" class="style-scope yt-icon">
+                            <g class="style-scope yt-icon">
+                                <path fill="#FF0000"
+                                    d="M63,14.87c-0.72-2.7-2.85-4.83-5.56-5.56C52.54,8,32.88,8,32.88,8S13.23,8,8.32,9.31 c-2.7,0.72-4.83,2.85-5.56,5.56C1.45,19.77,1.45,30,1.45,30s0,10.23,1.31,15.13c0.72,2.7,2.85,4.83,5.56,5.56 C13.23,52,32.88,52,32.88,52s19.66,0,24.56-1.31c2.7-0.72,4.83-2.85,5.56-5.56C64.31,40.23,64.31,30,64.31,30 S64.31,19.77,63,14.87z"
+                                    class="style-scope yt-icon"></path>
+                                <polygon fill="#FFFFFF" points="26.6,39.43 42.93,30 26.6,20.57"
+                                    class="style-scope yt-icon"></polygon>
+                            </g>
+                            <g class="style-scope yt-icon">
+                                <g id="youtube-paths" class="style-scope yt-icon">
+                                    <path
+                                        d="M92.69,48.03c-1.24-0.84-2.13-2.14-2.65-3.91c-0.52-1.77-0.79-4.12-0.79-7.06v-4 c0-2.97,0.3-5.35,0.9-7.15c0.6-1.8,1.54-3.11,2.81-3.93c1.27-0.82,2.94-1.24,5.01-1.24c2.04,0,3.67,0.42,4.9,1.26 c1.23,0.84,2.13,2.15,2.7,3.93c0.57,1.78,0.85,4.16,0.85,7.12v4c0,2.94-0.28,5.3-0.83,7.08c-0.55,1.78-1.45,3.09-2.7,3.91 c-1.24,0.82-2.93,1.24-5.06,1.24C95.65,49.29,93.93,48.87,92.69,48.03z M99.66,43.71c0.34-0.9,0.52-2.37,0.52-4.4v-8.59 c0-1.98-0.17-3.42-0.52-4.34c-0.34-0.91-0.95-1.37-1.82-1.37c-0.84,0-1.43,0.46-1.78,1.37c-0.34,0.91-0.52,2.36-0.52,4.34v8.59 c0,2.04,0.16,3.51,0.49,4.4c0.33,0.9,0.93,1.35,1.8,1.35C98.71,45.06,99.31,44.61,99.66,43.71z"
+                                        class="style-scope yt-icon"></path>
+                                    <path
+                                        d="M188.16,37.13v1.39c0,1.77,0.05,3.09,0.16,3.98c0.1,0.88,0.32,1.53,0.65,1.93 c0.33,0.4,0.84,0.61,1.53,0.61c0.93,0,1.57-0.36,1.91-1.08c0.34-0.72,0.53-1.92,0.56-3.6l5.35,0.31 c0.03,0.24,0.04,0.57,0.04,0.99c0,2.55-0.7,4.45-2.09,5.71c-1.39,1.26-3.36,1.89-5.91,1.89c-3.06,0-5.2-0.96-6.43-2.88 c-1.23-1.92-1.84-4.88-1.84-8.9v-4.81c0-4.14,0.64-7.15,1.91-9.06c1.27-1.9,3.45-2.85,6.54-2.85c2.13,0,3.76,0.39,4.9,1.17 c1.14,0.78,1.94,1.99,2.41,3.64c0.46,1.65,0.7,3.93,0.7,6.83v4.72H188.16z M188.95,25.53c-0.31,0.39-0.52,1.03-0.63,1.91 c-0.11,0.88-0.16,2.23-0.16,4.02v1.98h4.54v-1.98c0-1.77-0.06-3.11-0.18-4.02c-0.12-0.91-0.34-1.56-0.65-1.93 c-0.31-0.37-0.8-0.56-1.46-0.56C189.75,24.94,189.26,25.14,188.95,25.53z"
+                                        class="style-scope yt-icon"></path>
+                                    <path
+                                        d="M77.59,36.61l-7.06-25.49h6.16l2.47,11.55c0.63,2.85,1.09,5.27,1.39,7.28h0.18 c0.21-1.44,0.67-3.85,1.39-7.24l2.56-11.6h6.16L83.7,36.61v12.23h-6.11V36.61z"
+                                        class="style-scope yt-icon"></path>
+                                    <path
+                                        d="M126.45,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8 c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79 c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H126.45z"
+                                        class="style-scope yt-icon"></path>
+                                    <path
+                                        d="M158.27,21.28v27.55h-4.85l-0.54-3.37h-0.13c-1.32,2.55-3.3,3.82-5.93,3.82c-1.83,0-3.18-0.6-4.05-1.8 c-0.87-1.2-1.3-3.07-1.3-5.62V21.28h6.2v20.23c0,1.23,0.13,2.11,0.4,2.63c0.27,0.52,0.72,0.79,1.35,0.79 c0.54,0,1.06-0.16,1.55-0.49c0.49-0.33,0.86-0.75,1.1-1.26V21.28H158.27z"
+                                        class="style-scope yt-icon"></path>
+                                    <path d="M143.31,16.11h-6.16v32.72h-6.07V16.11h-6.16v-4.99h18.38V16.11z"
+                                        class="style-scope yt-icon">
+                                    </path>
+                                    <path
+                                        d="M178.8,25.69c-0.38-1.74-0.98-3-1.82-3.78c-0.84-0.78-1.99-1.17-3.46-1.17c-1.14,0-2.2,0.32-3.19,0.97 c-0.99,0.64-1.75,1.49-2.29,2.54h-0.05l0-14.52h-5.98v39.11h5.12l0.63-2.61h0.13c0.48,0.93,1.2,1.66,2.16,2.2 c0.96,0.54,2.02,0.81,3.19,0.81c2.1,0,3.64-0.97,4.63-2.9c0.99-1.93,1.48-4.95,1.48-9.06v-4.36 C179.36,29.84,179.17,27.43,178.8,25.69z M173.11,36.93c0,2.01-0.08,3.58-0.25,4.72c-0.16,1.14-0.44,1.95-0.83,2.43 c-0.39,0.48-0.91,0.72-1.57,0.72c-0.51,0-0.98-0.12-1.42-0.36c-0.43-0.24-0.79-0.6-1.06-1.08V27.71 c0.21-0.75,0.57-1.36,1.08-1.84c0.51-0.48,1.06-0.72,1.66-0.72c0.63,0,1.12,0.25,1.46,0.74c0.34,0.49,0.58,1.33,0.72,2.49 c0.13,1.17,0.2,2.83,0.2,4.99V36.93z"
+                                        class="style-scope yt-icon"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <!--css-build:shady-->
+                </yt-icon>
+            </div>
         </div>
-      </div>
+        <div class="search-container">
+            <input type="text" class="search-bar">
+            <div class="search-button">
+                <div class="logo">
+                    <yt-icon class="style-scope ytd-searchbox"><svg viewBox="0 0 24 24"
+                            preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <!--css-build:shady-->
+                    </yt-icon>
+                </div>
+            </div>
 
-    </div>
-    <div class="user-container">
-      <div class="control-logos">
-        <yt-icon class="" style="cursor: pointer;"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
-      </div>
-
-      <div class="control-logos">
-        <yt-icon class="" style="cursor: pointer;"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
-      </div>
-
-      <div class="sign-in-button" style="cursor: pointer;">
-        <div class="sign-in-logo logo">
-          <yt-icon class="" ><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
         </div>
-        <div class="sign-in-text">SIGN IN</div>
-      </div>
-    </div>
-
-  </nav>
-  
-  <div class="main">
-    <div class="left">
-      <iframe id="video"  src="https://www.youtube.com/embed/sW9npZVpiMI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-      <div class="video-section">
-        <div class="video-title-metadata">
-          <h3 class="video-title">why you NEED math for programming</h2>
-          <small>1,627,154 views • Jan 5, 2021</small>
-        </div>
-
-        <div class="video-controls">
-          <div class="video-controls-buttons">
-
-            <div class="button">
-              <div class="like-button">
-                <yt-icon class="style-scope ytd-toggle-button-renderer"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
-              </div>
-              <span class="like-count">115K</span>
+        <div class="user-container">
+            <div class="control-logos">
+                <yt-icon class="" style="cursor: pointer;"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                        focusable="false" class="style-scope yt-icon"
+                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="style-scope yt-icon">
+                            <path
+                                d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"
+                                class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                    <!--css-build:shady-->
+                </yt-icon>
             </div>
 
-            <div class="button">
-              <div class="like-button">
-                <yt-icon class="style-scope ytd-toggle-button-renderer"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
-              </div>
-              <span class="like-count">115K</span>
+            <div class="control-logos">
+                <yt-icon class="" style="cursor: pointer;"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                        focusable="false" class="style-scope yt-icon"
+                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                        <g class="style-scope yt-icon">
+                            <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                                class="style-scope yt-icon"></path>
+                        </g>
+                    </svg>
+                    <!--css-build:shady-->
+                </yt-icon>
             </div>
 
-            <div class="button">
-              <div class="like-button">
-                <yt-icon class="style-scope ytd-button-renderer"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g mirror-in-rtl="" class="style-scope yt-icon"><path d="M14 9V3L22 12L14 21V15C8.44 15 4.78 17.03 2 21C3.11 15.33 6.22 10.13 14 9Z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
-              </div>
-              <span class="like-count">SHARE</span>
+            <div class="sign-in-button" style="cursor: pointer;">
+                <div class="sign-in-logo logo">
+                    <yt-icon class=""><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false"
+                            class="style-scope yt-icon"
+                            style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                            <g class="style-scope yt-icon">
+                                <path
+                                    d="M12,0 C18.62375,0 24,5.37625 24,12 C24,18.62375 18.62375,24 12,24 C5.37625,24 0,18.62375 0,12 C0,5.37625 5.37625,0 12,0 Z M12,10.63625 C13.66,10.63625 15,9.29625 15,7.63625 C15,5.97625 13.66,4.63625 12,4.63625 C10.34,4.63625 9,5.97625 9,7.63625 C9,9.29625 10.34,10.63625 12,10.63625 Z M12,12.40875 C8.33375,12.40875 5.455,14.18125 5.455,15.8175 C6.84125,17.95 9.26875,19.3625 12,19.3625 C14.73125,19.3625 17.15875,17.95 18.545,15.8175 C18.545,14.18125 15.66625,12.40875 12,12.40875 Z"
+                                    class="style-scope yt-icon"></path>
+                            </g>
+                        </svg>
+                        <!--css-build:shady-->
+                    </yt-icon>
+                </div>
+                <div class="sign-in-text">SIGN IN</div>
             </div>
-
-            <div class="button">
-              <div class="like-button">
-                <yt-icon class="style-scope ytd-button-renderer"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
-              </div>
-              <span class="like-count">SAVE</span>
-            </div>
-
-            <div class="button">
-              <div class="like-button">
-                <yt-icon class="style-scope ytd-menu-renderer"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle><circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle></g></svg><!--css-build:shady--></yt-icon>
-              </div>
-            </div>
-
-          </div>
         </div>
 
-      </div>
-      <hr>
-      <div class="user-section">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio omnis porro quasi esse, obcaecati laboriosam, rem error vero, tempora aut fuga cumque dolores autem dolor nulla! Voluptatum totam, sunt aliquid voluptate voluptas doloremque non dolores nisi, numquam harum voluptatem commodi soluta. Qui nobis dolores doloribus impedit voluptates obcaecati quos cum distinctio, eaque deleniti facilis, sed tempora, laborum animi dolorum vero amet nulla minima quam! Necessitatibus possimus ab placeat illum corrupti iusto sunt a voluptatem ea ipsum dolore, id mollitia dignissimos voluptas quaerat et consequatur non at enim repudiandae ipsam? Error eius sit ad non, obcaecati nobis hic enim distinctio ducimus, exercitationem consectetur at illo tempore laboriosam omnis nihil temporibus architecto? Pariatur autem optio assumenda asperiores facilis dicta, natus necessitatibus voluptatibus ad ullam! Quo, quasi, officiis voluptatibus totam earum, doloremque quisquam numquam dolorem asperiores natus non magnam? Eveniet dolorum libero aliquam reprehenderit doloribus mollitia recusandae. Vitae minima facilis, earum odit sequi ea ipsa veritatis ut at explicabo fugiat itaque. Quibusdam magni, explicabo cupiditate alias, excepturi voluptatum architecto hic nobis reiciendis iure enim porro repellat molestias maxime incidunt voluptate nulla aliquam culpa suscipit doloremque sunt! Veritatis, quos nam ipsa repellendus nemo impedit itaque repellat voluptatibus vel! Velit, asperiores, minima autem soluta dolores dolorem dolor provident consequuntur reiciendis officiis doloremque non maxime nostrum? Aspernatur inventore, eligendi culpa placeat blanditiis minus, veritatis eaque tenetur sed rerum voluptas non soluta quas similique, esse dolorem voluptates est impedit incidunt illo cumque quos voluptatibus. Vitae quas quisquam illum illo suscipit. Id, veniam dolorem nihil sint eligendi a, cumque perferendis quas, reiciendis pariatur quibusdam magnam tempora sit reprehenderit. Debitis repellat corrupti inventore id veniam modi obcaecati esse, officia dolorum sint suscipit et doloribus unde eius laudantium repellendus quibusdam ut impedit expedita harum incidunt nobis. Quaerat harum reiciendis obcaecati doloremque. Qui officia consectetur in ipsum sint eum numquam explicabo?</div>
-      <hr>
-      <div class="comment-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi neque ratione repudiandae quasi obcaecati nesciunt, minima asperiores id doloremque voluptates ab nobis dolorum saepe similique. Omnis dicta corrupti in vitae alias rem velit atque unde, assumenda animi reprehenderit adipisci quos accusantium, iure voluptate beatae! Delectus quidem accusamus deleniti voluptatem dignissimos ab nihil iste ad facere, aspernatur animi sint! Sequi molestias nulla inventore nemo hic, eaque corrupti est iusto dolor, dolorem harum ducimus laudantium iure laboriosam voluptates fuga dolore eligendi beatae. Consequuntur ipsam veritatis obcaecati quo laudantium fuga iusto nostrum et voluptate ea nam molestias incidunt error nihil vero, exercitationem nemo. Similique officia eveniet amet! Iste aperiam reiciendis ab quis repellat molestiae deleniti tempore laborum accusantium exercitationem! Rem hic accusamus, voluptatum, ipsa eos esse qui magnam assumenda magni, alias dolorum cumque non porro quos at ipsam suscipit consequuntur. Nam dolores modi voluptatem delectus asperiores in voluptas omnis veritatis facere. Sed dolore quibusdam fugiat itaque, corporis vitae voluptatibus culpa quam nostrum nisi quis repudiandae minus! Eaque sequi cumque quos harum nobis voluptate nam repellat! Harum temporibus nihil officiis sint labore perferendis velit quia voluptatem. Ducimus nam pariatur quasi qui molestias animi provident voluptatum cum, magnam accusamus quod quaerat, voluptate harum odio minus dolore rem reiciendis. Iste unde expedita praesentium ipsum inventore pariatur dolor possimus earum accusantium porro placeat quo sit laudantium, quam vitae asperiores doloremque facere? Placeat saepe corporis vitae labore suscipit ipsum praesentium, voluptatibus, assumenda atque quia quisquam excepturi quaerat, veniam dignissimos expedita ipsam explicabo nobis dolorem aliquid quos eum! Dolore atque soluta ipsa cupiditate! Officia optio deleniti nam? Quasi, dolores. Ipsa iste architecto non repellat provident praesentium beatae vitae commodi alias, labore debitis. Delectus molestiae facere, laborum qui blanditiis labore odit, nulla, corporis sint repellendus similique repudiandae explicabo quas! Amet voluptatibus reiciendis cum similique culpa dolorum tempora at cupiditate. At, fugit architecto officiis facere quaerat excepturi doloribus similique, unde illo aspernatur provident commodi ipsa ab, numquam libero delectus vitae laborum molestias nisi iure sequi. Quasi, dolor excepturi nemo soluta exercitationem eligendi velit reprehenderit saepe nisi alias provident possimus dolorem voluptatibus iure rerum ipsam voluptas quibusdam enim voluptatum eos dolore incidunt autem? Optio, animi eveniet magni voluptate, ipsam rem esse in recusandae, delectus vero alias tempora illo aspernatur officia nostrum perferendis quas harum voluptates! Suscipit praesentium dolorum tempore deserunt omnis natus provident. Labore quaerat molestias corrupti aut. Et consequatur distinctio atque neque ullam sed saepe! Accusantium rerum nihil nobis iure expedita labore est commodi accusamus libero officia neque placeat aut similique consequatur dicta, pariatur odit enim laborum assumenda esse totam. Harum maiores, iure odio modi repellendus expedita ipsum et perferendis ullam quod consequuntur beatae fugiat dolor nihil molestias officia voluptate fuga non eum? Ipsa quas soluta mollitia sed, optio, sequi cumque exercitationem aperiam voluptate numquam dolor rem. Veritatis dolores eveniet commodi, excepturi ea molestias saepe ipsa rerum assumenda harum repudiandae dignissimos aliquam quo quaerat deserunt quam sint dolorem eligendi accusamus qui tenetur, architecto amet! Obcaecati debitis accusamus totam deleniti consectetur, dolor a sapiente odit aliquam nihil velit, sunt, vel fuga. Autem, nostrum. Possimus, distinctio vero? Ipsum suscipit, unde similique voluptatem asperiores quod molestiae earum id ab labore, eligendi ullam eveniet explicabo laudantium sit, perferendis reiciendis quaerat iusto. Sunt consequatur sapiente deleniti quam eum itaque suscipit. Consectetur quidem natus molestias, eveniet mollitia optio voluptas aliquid reprehenderit fugiat obcaecati error quaerat dicta cum dolorum alias officia odio rerum sapiente incidunt enim totam facere dolore nostrum est. Modi officiis nesciunt enim vero dicta provident pariatur explicabo, quaerat nam facere, iure molestias quidem corrupti? Repellat et assumenda praesentium magnam perspiciatis? Harum suscipit maiores veniam corrupti illum facilis molestias optio, accusamus aliquid cumque aliquam error doloremque deserunt odit facere atque aperiam quia esse pariatur earum. Odio, vitae similique sit dolores quaerat quasi libero dignissimos fugit delectus quod enim exercitationem eos architecto minus laudantium tempore consequatur aliquid porro doloremque nihil nulla! Quam, explicabo. Pariatur iusto debitis repellendus, dolores doloremque ab magnam. Eos harum, accusamus earum tempora adipisci quidem laborum voluptatem cupiditate possimus placeat alias, eaque at. Sed officia dignissimos distinctio itaque, maiores maxime quibusdam similique molestias, magni atque quam error repellat labore quo eius ipsum nisi, accusamus expedita excepturi eligendi molestiae fugit exercitationem. Doloremque mollitia excepturi illo eum unde, blanditiis, dolore, distinctio quis cum similique ad veniam! Itaque aliquid porro perspiciatis culpa, sapiente eius assumenda minus odit, iste voluptates quibusdam pariatur repellendus non vel consectetur veniam recusandae, maiores delectus distinctio! Error accusantium magnam, doloremque eius eligendi labore quos soluta iusto dicta aperiam enim minus ex inventore veritatis expedita pariatur sed quia aliquam id? Expedita eos possimus saepe molestiae nam laudantium id eum quis ea. Vero, reprehenderit rem. Doloribus aspernatur natus sint nobis sequi ab, aliquid tempore. Voluptas esse eius voluptatem minima enim excepturi voluptate possimus similique distinctio ullam asperiores illum deserunt ratione quis eligendi optio repellendus in, incidunt aperiam quibusdam iure doloremque accusamus magnam. Veritatis minus error iste temporibus id dolore consequuntur quam. Ducimus pariatur excepturi adipisci corporis cupiditate a laboriosam et unde iusto, fuga dolor eaque ipsam distinctio animi accusantium impedit. Cupiditate, esse. Error mollitia, doloremque placeat esse dicta praesentium aperiam adipisci. Repellendus quod quidem maiores sunt, illo laborum enim at, totam tempore deleniti vero, non porro ullam! Cum sapiente, minus rem eaque commodi possimus dolorum quod harum rerum est non doloribus modi exercitationem at adipisci magnam tempora quia fugit illo officiis, temporibus omnis id! Architecto voluptate impedit ad nobis sunt tenetur iste est reiciendis fugiat numquam voluptatem culpa dolorum, labore consectetur sed, vel repudiandae. Eos libero nulla quod enim accusantium est dignissimos, quia corrupti fugiat voluptas voluptatibus illum vero voluptate. Illo reiciendis ea minus dicta eveniet natus omnis impedit! Modi unde, reiciendis omnis voluptatem vero praesentium eveniet expedita blanditiis, iste neque labore voluptatibus officiis tempore non id, saepe natus dolore itaque nostrum numquam? Necessitatibus fugiat laboriosam esse non mollitia quas laborum maiores animi, reiciendis eligendi aliquid deleniti modi odit alias error quae quia, optio maxime, numquam eos nostrum impedit? Libero necessitatibus, rem ipsa, odit adipisci hic magnam quos fuga suscipit facilis magni quisquam temporibus? Harum, officia explicabo dolore minus porro rerum esse repellendus exercitationem facere blanditiis nulla labore maxime modi consequuntur fuga, consequatur obcaecati! Voluptates ab quod minima vero ducimus doloribus ea obcaecati veritatis delectus dolores fugit dolorem, consectetur dolorum eligendi officia ex. Dolorum inventore beatae sint fugiat accusantium repellat quis omnis, dolore nihil modi molestias maxime cumque, ad esse! Minima aspernatur harum quas culpa expedita voluptatem a, placeat atque repudiandae repellendus provident tenetur perspiciatis sit accusamus nihil hic numquam ab est suscipit saepe nostrum temporibus asperiores sunt. Inventore explicabo saepe dignissimos sunt laboriosam blanditiis vitae qui voluptates! Sint ut impedit blanditiis eaque. Deleniti dolores velit, ut cumque id iusto ratione consequatur reiciendis esse sit cum eveniet non exercitationem. Ad sequi quaerat quo explicabo praesentium magnam excepturi, dolore adipisci! Ea atque soluta cupiditate. Tenetur sit maiores ullam laboriosam ipsum libero molestiae, perferendis voluptatibus adipisci placeat? Laborum nesciunt omnis quo sunt minus mollitia doloribus? Ex quae deserunt quis tempora dolorem totam soluta doloremque officiis iste? Distinctio consequatur ea dolore mollitia architecto at, delectus voluptates est debitis iste nihil vitae illo dolores quisquam repellendus praesentium. Fugit ullam quibusdam rem labore aperiam veniam, quisquam distinctio provident mollitia iure modi ipsam eum? Officiis voluptatum dolorem at officia, optio incidunt, vitae blanditiis libero sunt itaque deleniti ipsum aliquid alias voluptatibus et deserunt iure sapiente delectus dolores, facilis necessitatibus! Atque fugiat quae ducimus, voluptate dicta provident vel ab. Eaque similique maiores voluptates aut fugit? Explicabo architecto vero dolores veritatis quia tempore repellat eos officiis aperiam quidem! Enim inventore dolorem explicabo modi maxime? Ducimus provident amet eligendi eum a totam, temporibus molestiae. Fugiat maxime asperiores aut modi odit. Dolore earum asperiores ut accusantium distinctio, quibusdam minima recusandae nihil deleniti provident molestiae libero harum. Consequuntur officiis voluptas neque ullam. Dicta ut odit distinctio quidem atque blanditiis illo dolor nulla enim. Quaerat quam, maiores animi, illum cumque quae qui libero tenetur possimus aperiam maxime veniam dolore magni facere sapiente sunt repudiandae culpa sit numquam magnam consequatur quasi autem. Dolore impedit quos eum quod quasi quae non quisquam laudantium, ad magni dolor perferendis obcaecati optio repudiandae cum earum voluptas totam, nobis possimus error aliquam repellendus delectus. Blanditiis officia quo dolores unde eos placeat mollitia cum nulla, qui inventore illo. Dolores rem quaerat quia! Magnam nemo sequi officia beatae alias pariatur nobis, adipisci quod quos animi maiores veniam et dolor necessitatibus eaque porro dicta commodi repellat quidem neque, consequuntur facere. Cupiditate minima eos tenetur quos repellat dicta. Fugiat voluptatum repudiandae deserunt asperiores facilis dolore voluptatem cupiditate impedit incidunt, quos dicta nesciunt in quae? Nesciunt deleniti, sit, vel quo ipsa eum provident doloremque amet, assumenda itaque quis fuga iure molestiae beatae incidunt unde at iste. Est itaque facilis eius pariatur quasi, commodi at possimus enim molestiae dolor quia nemo cumque mollitia consectetur molestias numquam explicabo autem expedita hic aperiam odit. Facere eius deserunt ab quisquam officia praesentium voluptas. Quaerat ipsam inventore quis laudantium ipsum fuga tempore nam quia qui reiciendis hic, repudiandae dolores eligendi natus est quae quam voluptates. Quod reiciendis eveniet voluptatem, minus perferendis id quidem eum quos, illum animi excepturi alias nam consectetur odit asperiores ipsam dolor est magnam reprehenderit atque. Nisi architecto blanditiis dicta quo omnis similique animi reprehenderit nulla, fugiat temporibus dolores, numquam culpa accusamus aperiam! Nemo sint ullam voluptates dolorum a, expedita iusto voluptate ratione rem, quod perspiciatis dolor tempora quae officia dicta repellendus et officiis temporibus aliquid? Ipsam, aperiam quia molestiae maiores dignissimos, dolorem vel, sed pariatur repudiandae ad dolor labore hic. Perferendis, placeat inventore qui, quos quod hic quia expedita quaerat vel, vero minima. Ad vero ut cupiditate tempora, officiis pariatur eligendi explicabo magnam inventore, maxime nemo laudantium fugit error! Perspiciatis voluptates soluta rem quisquam exercitationem repellat, unde esse dolorem assumenda eius laudantium velit, quae similique consectetur quod recusandae animi nemo nobis consequuntur minima asperiores incidunt laborum cumque. Unde reiciendis illum, odio cumque nostrum recusandae mollitia nihil! Commodi iste, autem repellat facilis sint est natus vitae, repellendus illo dolorem ipsa possimus odio recusandae sunt nulla. Autem voluptate magni mollitia temporibus officia! Iure voluptatem natus nemo, saepe laborum ut non rem eum vitae dolores illo. Quibusdam enim obcaecati, sunt, voluptatum aliquid, excepturi quos sint temporibus dolorum accusantium distinctio fuga magnam soluta! Obcaecati dolorem, voluptatem, molestias, vero sit facere animi amet autem sapiente odit vitae. Id neque sint fugit vel iusto quo, minima debitis! Maxime iusto porro illo ad blanditiis eveniet neque numquam obcaecati delectus vitae voluptas nisi facere et, similique architecto, voluptatum sed laborum minus unde minima necessitatibus ipsum, tenetur quis. Voluptatum error eos dignissimos laboriosam eum nam sint quam, asperiores consectetur voluptates inventore! Eligendi repellat non odit quod ut explicabo aliquid, voluptates similique, omnis sunt itaque aliquam fuga minima ea delectus adipisci consequatur pariatur quos doloremque error impedit sint! Amet saepe, corporis perspiciatis aspernatur pariatur in nostrum, quaerat quisquam laboriosam asperiores voluptates sit aliquam enim voluptas nobis quasi ea, officia ut. Soluta maiores quibusdam provident veritatis. Accusantium placeat assumenda modi ullam quos rerum qui corporis aspernatur neque, saepe architecto! Quia omnis aliquam aut laudantium magnam facilis eveniet culpa a iure incidunt, at tempore ex, ipsam sed atque autem debitis accusamus adipisci odit repellat harum dolorum neque! Quos nulla id eos rerum quae beatae, quasi porro molestias quas distinctio quam voluptas dolore suscipit debitis et quaerat natus provident molestiae inventore architecto excepturi? Est aut explicabo quasi nobis facilis. Tempora similique, doloremque hic iusto debitis tenetur obcaecati sequi est eveniet eos architecto suscipit aperiam nobis, expedita harum enim quas at ab asperiores veniam rem. Cupiditate eligendi incidunt repellat, tempore veniam non aliquam deleniti pariatur expedita sequi optio dignissimos ipsam ipsa illum voluptatum quam sit voluptate commodi quae. Quam molestiae ipsam iusto rerum, quod nobis aspernatur asperiores, magni eum alias odit vitae eaque atque, fugiat distinctio libero nam? Esse aperiam, fugiat minus tempora consectetur suscipit inventore amet similique repudiandae nostrum rem illum atque provident excepturi ducimus modi quae sunt velit! Quae sequi temporibus sed minus cumque velit saepe explicabo quibusdam, nam commodi, molestias neque suscipit a quidem consequatur aperiam quasi magni eligendi, eius unde placeat repellat id asperiores. Saepe, culpa beatae! Mollitia delectus a labore, aut eaque quibusdam molestias reprehenderit ipsum quisquam voluptas!</div>
+    </nav>
+
+    <div class="main">
+        <div class="left">
+            <iframe id="video" src="https://www.youtube.com/embed/sW9npZVpiMI" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+            </iframe>
+
+
+            <div class="video-section">
+                <div class="video-title-metadata">
+                    <h3 class="video-title">why you NEED math for programming</h2>
+                        <small style="padding-top: 14px;">1,627,154 views • Jan 5, 2021</small>
+                </div>
+
+                <div class="video-controls">
+                    <div class="video-controls-buttons">
+
+                        <div class="button">
+                            <div class="like-button">
+                                <yt-icon class="style-scope ytd-toggle-button-renderer"><svg viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        class="style-scope yt-icon"
+                                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                        <g class="style-scope yt-icon">
+                                            <path
+                                                d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                                                class="style-scope yt-icon"></path>
+                                        </g>
+                                    </svg>
+                                    <!--css-build:shady-->
+                                </yt-icon>
+                            </div>
+                            <span class="like-count">115K</span>
+                        </div>
+
+                        <div class="button">
+                            <div class="like-button">
+                                <yt-icon class="style-scope ytd-toggle-button-renderer"><svg viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        class="style-scope yt-icon"
+                                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                        <g class="style-scope yt-icon">
+                                            <path
+                                                d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                                                class="style-scope yt-icon"></path>
+                                        </g>
+                                    </svg>
+                                    <!--css-build:shady-->
+                                </yt-icon>
+                            </div>
+                            <span class="like-count">115K</span>
+                        </div>
+
+                        <div class="button">
+                            <div class="like-button">
+                                <yt-icon class="style-scope ytd-button-renderer"><svg viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        class="style-scope yt-icon"
+                                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                        <g mirror-in-rtl="" class="style-scope yt-icon">
+                                            <path
+                                                d="M14 9V3L22 12L14 21V15C8.44 15 4.78 17.03 2 21C3.11 15.33 6.22 10.13 14 9Z"
+                                                class="style-scope yt-icon"></path>
+                                        </g>
+                                    </svg>
+                                    <!--css-build:shady-->
+                                </yt-icon>
+                            </div>
+                            <span class="like-count">SHARE</span>
+                        </div>
+
+                        <div class="button">
+                            <div class="like-button">
+                                <yt-icon class="style-scope ytd-button-renderer"><svg viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        class="style-scope yt-icon"
+                                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                        <g class="style-scope yt-icon">
+                                            <path
+                                                d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"
+                                                class="style-scope yt-icon"></path>
+                                        </g>
+                                    </svg>
+                                    <!--css-build:shady-->
+                                </yt-icon>
+                            </div>
+                            <span class="like-count">SAVE</span>
+                        </div>
+
+                        <div class="button">
+                            <div class="like-button">
+                                <yt-icon class="style-scope ytd-menu-renderer"><svg viewBox="0 0 24 24"
+                                        preserveAspectRatio="xMidYMid meet" focusable="false"
+                                        class="style-scope yt-icon"
+                                        style="pointer-events: none; display: block; width: 100%; height: 100%;">
+                                        <g class="style-scope yt-icon">
+                                            <circle cx="5" cy="12" r="2" class="style-scope yt-icon"></circle>
+                                            <circle cx="12" cy="12" r="2" class="style-scope yt-icon"></circle>
+                                            <circle cx="19" cy="12" r="2" class="style-scope yt-icon"></circle>
+                                        </g>
+                                    </svg>
+                                    <!--css-build:shady-->
+                                </yt-icon>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="user-section">
+                <div class="user-metadata">
+                    <div class="user-wrapper">
+                        <img height="50" width="50" class="profile_picture" src="https://yt3.ggpht.com/ytc/AAUvwniqkVXvK9dEpAu9Mkpyz46oCwFYOgg5ummDXx0c=s176-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="user-info">
+                            <div class="username">
+                                Joma Tech
+                                <div class="verified-icon">
+                                    <yt-icon class="style-scope ytd-badge-supported-renderer"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10 S17.52,2,12,2z M9.92,17.93l-4.95-4.95l2.05-2.05l2.9,2.9l7.35-7.35l2.05,2.05L9.92,17.93z" class="style-scope yt-icon"></path></g></svg><!--css-build:shady--></yt-icon>
+                                </div>
+                            </div>
+                            <div class="subscriber-count">
+                                <small>899K subscribers</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user-buttons">
+                        <div class="btn">JOIN</div>
+                        <div class="btn sub-btn">SUBSCRIBE</div>
+                    </div>
+                </div>
+                <div class="description-section">
+                    <h5 class="description">
+                        Get the JomaClass membership: <a href="https://joma.tech/38wHNoq​">https://joma.tech/38wHNoq​</a> 
+                        <br>
+                        First 100 people get 15% off the yearly subscription with promo code "DONUT"
+                        <br>
+                        <p class="description-more">Show More</p>
+                    </h5>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="comment-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi neque ratione
+                repudiandae quasi obcaecati nesciunt, minima asperiores id doloremque voluptates ab nobis dolorum saepe
+                similique. Omnis dicta corrupti in vitae alias rem velit atque unde, assumenda animi reprehenderit
+                adipisci quos
+                accusantium, iure voluptate beatae! Delectus quidem accusamus deleniti voluptatem dignissimos ab nihil
+                iste ad
+                facere, aspernatur animi sint! Sequi molestias nulla inventore nemo hic, eaque corrupti est iusto dolor,
+                dolorem
+                harum ducimus laudantium iure laboriosam voluptates fuga dolore eligendi beatae. Consequuntur ipsam
+                veritatis
+                obcaecati quo laudantium fuga iusto nostrum et voluptate ea nam molestias incidunt error nihil vero,
+                exercitationem nemo. Similique officia eveniet amet! Iste aperiam reiciendis ab quis repellat molestiae
+                deleniti
+                tempore laborum accusantium exercitationem! Rem hic accusamus, voluptatum, ipsa eos esse qui magnam
+                assumenda
+                magni, alias dolorum cumque non porro quos at ipsam suscipit consequuntur. Nam dolores modi voluptatem
+                delectus
+                asperiores in voluptas omnis veritatis facere. Sed dolore quibusdam fugiat itaque, corporis vitae
+                voluptatibus
+                culpa quam nostrum nisi quis repudiandae minus! Eaque sequi cumque quos harum nobis voluptate nam
+                repellat!
+                Harum temporibus nihil officiis sint labore perferendis velit quia voluptatem. Ducimus nam pariatur
+                quasi qui
+                molestias animi provident voluptatum cum, magnam accusamus quod quaerat, voluptate harum odio minus
+                dolore rem
+                reiciendis. Iste unde expedita praesentium ipsum inventore pariatur dolor possimus earum accusantium
+                porro
+                placeat quo sit laudantium, quam vitae asperiores doloremque facere? Placeat saepe corporis vitae labore
+                suscipit ipsum praesentium, voluptatibus, assumenda atque quia quisquam excepturi quaerat, veniam
+                dignissimos
+                expedita ipsam explicabo nobis dolorem aliquid quos eum! Dolore atque soluta ipsa cupiditate! Officia
+                optio
+                deleniti nam? Quasi, dolores. Ipsa iste architecto non repellat provident praesentium beatae vitae
+                commodi
+                alias, labore debitis. Delectus molestiae facere, laborum qui blanditiis labore odit, nulla, corporis
+                sint
+                repellendus similique repudiandae explicabo quas! Amet voluptatibus reiciendis cum similique culpa
+                dolorum
+                tempora at cupiditate. At, fugit architecto officiis facere quaerat excepturi doloribus similique, unde
+                illo
+                aspernatur provident commodi ipsa ab, numquam libero delectus vitae laborum molestias nisi iure sequi.
+                Quasi,
+                dolor excepturi nemo soluta exercitationem eligendi velit reprehenderit saepe nisi alias provident
+                possimus
+                dolorem voluptatibus iure rerum ipsam voluptas quibusdam enim voluptatum eos dolore incidunt autem?
+                Optio, animi
+                eveniet magni voluptate, ipsam rem esse in recusandae, delectus vero alias tempora illo aspernatur
+                officia
+                nostrum perferendis quas harum voluptates! Suscipit praesentium dolorum tempore deserunt omnis natus
+                provident.
+                Labore quaerat molestias corrupti aut. Et consequatur distinctio atque neque ullam sed saepe!
+                Accusantium rerum
+                nihil nobis iure expedita labore est commodi accusamus libero officia neque placeat aut similique
+                consequatur
+                dicta, pariatur odit enim laborum assumenda esse totam. Harum maiores, iure odio modi repellendus
+                expedita ipsum
+                et perferendis ullam quod consequuntur beatae fugiat dolor nihil molestias officia voluptate fuga non
+                eum? Ipsa
+                quas soluta mollitia sed, optio, sequi cumque exercitationem aperiam voluptate numquam dolor rem.
+                Veritatis
+                dolores eveniet commodi, excepturi ea molestias saepe ipsa rerum assumenda harum repudiandae dignissimos
+                aliquam
+                quo quaerat deserunt quam sint dolorem eligendi accusamus qui tenetur, architecto amet! Obcaecati
+                debitis
+                accusamus totam deleniti consectetur, dolor a sapiente odit aliquam nihil velit, sunt, vel fuga. Autem,
+                nostrum.
+                Possimus, distinctio vero? Ipsum suscipit, unde similique voluptatem asperiores quod molestiae earum id
+                ab
+                labore, eligendi ullam eveniet explicabo laudantium sit, perferendis reiciendis quaerat iusto. Sunt
+                consequatur
+                sapiente deleniti quam eum itaque suscipit. Consectetur quidem natus molestias, eveniet mollitia optio
+                voluptas
+                aliquid reprehenderit fugiat obcaecati error quaerat dicta cum dolorum alias officia odio rerum sapiente
+                incidunt enim totam facere dolore nostrum est. Modi officiis nesciunt enim vero dicta provident pariatur
+                explicabo, quaerat nam facere, iure molestias quidem corrupti? Repellat et assumenda praesentium magnam
+                perspiciatis? Harum suscipit maiores veniam corrupti illum facilis molestias optio, accusamus aliquid
+                cumque
+                aliquam error doloremque deserunt odit facere atque aperiam quia esse pariatur earum. Odio, vitae
+                similique sit
+                dolores quaerat quasi libero dignissimos fugit delectus quod enim exercitationem eos architecto minus
+                laudantium
+                tempore consequatur aliquid porro doloremque nihil nulla! Quam, explicabo. Pariatur iusto debitis
+                repellendus,
+                dolores doloremque ab magnam. Eos harum, accusamus earum tempora adipisci quidem laborum voluptatem
+                cupiditate
+                possimus placeat alias, eaque at. Sed officia dignissimos distinctio itaque, maiores maxime quibusdam
+                similique
+                molestias, magni atque quam error repellat labore quo eius ipsum nisi, accusamus expedita excepturi
+                eligendi
+                molestiae fugit exercitationem. Doloremque mollitia excepturi illo eum unde, blanditiis, dolore,
+                distinctio quis
+                cum similique ad veniam! Itaque aliquid porro perspiciatis culpa, sapiente eius assumenda minus odit,
+                iste
+                voluptates quibusdam pariatur repellendus non vel consectetur veniam recusandae, maiores delectus
+                distinctio!
+                Error accusantium magnam, doloremque eius eligendi labore quos soluta iusto dicta aperiam enim minus ex
+                inventore veritatis expedita pariatur sed quia aliquam id? Expedita eos possimus saepe molestiae nam
+                laudantium
+                id eum quis ea. Vero, reprehenderit rem. Doloribus aspernatur natus sint nobis sequi ab, aliquid
+                tempore.
+                Voluptas esse eius voluptatem minima enim excepturi voluptate possimus similique distinctio ullam
+                asperiores
+                illum deserunt ratione quis eligendi optio repellendus in, incidunt aperiam quibusdam iure doloremque
+                accusamus
+                magnam. Veritatis minus error iste temporibus id dolore consequuntur quam. Ducimus pariatur excepturi
+                adipisci
+                corporis cupiditate a laboriosam et unde iusto, fuga dolor eaque ipsam distinctio animi accusantium
+                impedit.
+                Cupiditate, esse. Error mollitia, doloremque placeat esse dicta praesentium aperiam adipisci.
+                Repellendus quod
+                quidem maiores sunt, illo laborum enim at, totam tempore deleniti vero, non porro ullam! Cum sapiente,
+                minus rem
+                eaque commodi possimus dolorum quod harum rerum est non doloribus modi exercitationem at adipisci magnam
+                tempora
+                quia fugit illo officiis, temporibus omnis id! Architecto voluptate impedit ad nobis sunt tenetur iste
+                est
+                reiciendis fugiat numquam voluptatem culpa dolorum, labore consectetur sed, vel repudiandae. Eos libero
+                nulla
+                quod enim accusantium est dignissimos, quia corrupti fugiat voluptas voluptatibus illum vero voluptate.
+                Illo
+                reiciendis ea minus dicta eveniet natus omnis impedit! Modi unde, reiciendis omnis voluptatem vero
+                praesentium
+                eveniet expedita blanditiis, iste neque labore voluptatibus officiis tempore non id, saepe natus dolore
+                itaque
+                nostrum numquam? Necessitatibus fugiat laboriosam esse non mollitia quas laborum maiores animi,
+                reiciendis
+                eligendi aliquid deleniti modi odit alias error quae quia, optio maxime, numquam eos nostrum impedit?
+                Libero
+                necessitatibus, rem ipsa, odit adipisci hic magnam quos fuga suscipit facilis magni quisquam temporibus?
+                Harum,
+                officia explicabo dolore minus porro rerum esse repellendus exercitationem facere blanditiis nulla
+                labore maxime
+                modi consequuntur fuga, consequatur obcaecati! Voluptates ab quod minima vero ducimus doloribus ea
+                obcaecati
+                veritatis delectus dolores fugit dolorem, consectetur dolorum eligendi officia ex. Dolorum inventore
+                beatae sint
+                fugiat accusantium repellat quis omnis, dolore nihil modi molestias maxime cumque, ad esse! Minima
+                aspernatur
+                harum quas culpa expedita voluptatem a, placeat atque repudiandae repellendus provident tenetur
+                perspiciatis sit
+                accusamus nihil hic numquam ab est suscipit saepe nostrum temporibus asperiores sunt. Inventore
+                explicabo saepe
+                dignissimos sunt laboriosam blanditiis vitae qui voluptates! Sint ut impedit blanditiis eaque. Deleniti
+                dolores
+                velit, ut cumque id iusto ratione consequatur reiciendis esse sit cum eveniet non exercitationem. Ad
+                sequi
+                quaerat quo explicabo praesentium magnam excepturi, dolore adipisci! Ea atque soluta cupiditate. Tenetur
+                sit
+                maiores ullam laboriosam ipsum libero molestiae, perferendis voluptatibus adipisci placeat? Laborum
+                nesciunt
+                omnis quo sunt minus mollitia doloribus? Ex quae deserunt quis tempora dolorem totam soluta doloremque
+                officiis
+                iste? Distinctio consequatur ea dolore mollitia architecto at, delectus voluptates est debitis iste
+                nihil vitae
+                illo dolores quisquam repellendus praesentium. Fugit ullam quibusdam rem labore aperiam veniam, quisquam
+                distinctio provident mollitia iure modi ipsam eum? Officiis voluptatum dolorem at officia, optio
+                incidunt, vitae
+                blanditiis libero sunt itaque deleniti ipsum aliquid alias voluptatibus et deserunt iure sapiente
+                delectus
+                dolores, facilis necessitatibus! Atque fugiat quae ducimus, voluptate dicta provident vel ab. Eaque
+                similique
+                maiores voluptates aut fugit? Explicabo architecto vero dolores veritatis quia tempore repellat eos
+                officiis
+                aperiam quidem! Enim inventore dolorem explicabo modi maxime? Ducimus provident amet eligendi eum a
+                totam,
+                temporibus molestiae. Fugiat maxime asperiores aut modi odit. Dolore earum asperiores ut accusantium
+                distinctio,
+                quibusdam minima recusandae nihil deleniti provident molestiae libero harum. Consequuntur officiis
+                voluptas
+                neque ullam. Dicta ut odit distinctio quidem atque blanditiis illo dolor nulla enim. Quaerat quam,
+                maiores
+                animi, illum cumque quae qui libero tenetur possimus aperiam maxime veniam dolore magni facere sapiente
+                sunt
+                repudiandae culpa sit numquam magnam consequatur quasi autem. Dolore impedit quos eum quod quasi quae
+                non
+                quisquam laudantium, ad magni dolor perferendis obcaecati optio repudiandae cum earum voluptas totam,
+                nobis
+                possimus error aliquam repellendus delectus. Blanditiis officia quo dolores unde eos placeat mollitia
+                cum nulla,
+                qui inventore illo. Dolores rem quaerat quia! Magnam nemo sequi officia beatae alias pariatur nobis,
+                adipisci
+                quod quos animi maiores veniam et dolor necessitatibus eaque porro dicta commodi repellat quidem neque,
+                consequuntur facere. Cupiditate minima eos tenetur quos repellat dicta. Fugiat voluptatum repudiandae
+                deserunt
+                asperiores facilis dolore voluptatem cupiditate impedit incidunt, quos dicta nesciunt in quae? Nesciunt
+                deleniti, sit, vel quo ipsa eum provident doloremque amet, assumenda itaque quis fuga iure molestiae
+                beatae
+                incidunt unde at iste. Est itaque facilis eius pariatur quasi, commodi at possimus enim molestiae dolor
+                quia
+                nemo cumque mollitia consectetur molestias numquam explicabo autem expedita hic aperiam odit. Facere
+                eius
+                deserunt ab quisquam officia praesentium voluptas. Quaerat ipsam inventore quis laudantium ipsum fuga
+                tempore
+                nam quia qui reiciendis hic, repudiandae dolores eligendi natus est quae quam voluptates. Quod
+                reiciendis
+                eveniet voluptatem, minus perferendis id quidem eum quos, illum animi excepturi alias nam consectetur
+                odit
+                asperiores ipsam dolor est magnam reprehenderit atque. Nisi architecto blanditiis dicta quo omnis
+                similique
+                animi reprehenderit nulla, fugiat temporibus dolores, numquam culpa accusamus aperiam! Nemo sint ullam
+                voluptates dolorum a, expedita iusto voluptate ratione rem, quod perspiciatis dolor tempora quae officia
+                dicta
+                repellendus et officiis temporibus aliquid? Ipsam, aperiam quia molestiae maiores dignissimos, dolorem
+                vel, sed
+                pariatur repudiandae ad dolor labore hic. Perferendis, placeat inventore qui, quos quod hic quia
+                expedita
+                quaerat vel, vero minima. Ad vero ut cupiditate tempora, officiis pariatur eligendi explicabo magnam
+                inventore,
+                maxime nemo laudantium fugit error! Perspiciatis voluptates soluta rem quisquam exercitationem repellat,
+                unde
+                esse dolorem assumenda eius laudantium velit, quae similique consectetur quod recusandae animi nemo
+                nobis
+                consequuntur minima asperiores incidunt laborum cumque. Unde reiciendis illum, odio cumque nostrum
+                recusandae
+                mollitia nihil! Commodi iste, autem repellat facilis sint est natus vitae, repellendus illo dolorem ipsa
+                possimus odio recusandae sunt nulla. Autem voluptate magni mollitia temporibus officia! Iure voluptatem
+                natus
+                nemo, saepe laborum ut non rem eum vitae dolores illo. Quibusdam enim obcaecati, sunt, voluptatum
+                aliquid,
+                excepturi quos sint temporibus dolorum accusantium distinctio fuga magnam soluta! Obcaecati dolorem,
+                voluptatem,
+                molestias, vero sit facere animi amet autem sapiente odit vitae. Id neque sint fugit vel iusto quo,
+                minima
+                debitis! Maxime iusto porro illo ad blanditiis eveniet neque numquam obcaecati delectus vitae voluptas
+                nisi
+                facere et, similique architecto, voluptatum sed laborum minus unde minima necessitatibus ipsum, tenetur
+                quis.
+                Voluptatum error eos dignissimos laboriosam eum nam sint quam, asperiores consectetur voluptates
+                inventore!
+                Eligendi repellat non odit quod ut explicabo aliquid, voluptates similique, omnis sunt itaque aliquam
+                fuga
+                minima ea delectus adipisci consequatur pariatur quos doloremque error impedit sint! Amet saepe,
+                corporis
+                perspiciatis aspernatur pariatur in nostrum, quaerat quisquam laboriosam asperiores voluptates sit
+                aliquam enim
+                voluptas nobis quasi ea, officia ut. Soluta maiores quibusdam provident veritatis. Accusantium placeat
+                assumenda
+                modi ullam quos rerum qui corporis aspernatur neque, saepe architecto! Quia omnis aliquam aut laudantium
+                magnam
+                facilis eveniet culpa a iure incidunt, at tempore ex, ipsam sed atque autem debitis accusamus adipisci
+                odit
+                repellat harum dolorum neque! Quos nulla id eos rerum quae beatae, quasi porro molestias quas distinctio
+                quam
+                voluptas dolore suscipit debitis et quaerat natus provident molestiae inventore architecto excepturi?
+                Est aut
+                explicabo quasi nobis facilis. Tempora similique, doloremque hic iusto debitis tenetur obcaecati sequi
+                est
+                eveniet eos architecto suscipit aperiam nobis, expedita harum enim quas at ab asperiores veniam rem.
+                Cupiditate
+                eligendi incidunt repellat, tempore veniam non aliquam deleniti pariatur expedita sequi optio
+                dignissimos ipsam
+                ipsa illum voluptatum quam sit voluptate commodi quae. Quam molestiae ipsam iusto rerum, quod nobis
+                aspernatur
+                asperiores, magni eum alias odit vitae eaque atque, fugiat distinctio libero nam? Esse aperiam, fugiat
+                minus
+                tempora consectetur suscipit inventore amet similique repudiandae nostrum rem illum atque provident
+                excepturi
+                ducimus modi quae sunt velit! Quae sequi temporibus sed minus cumque velit saepe explicabo quibusdam,
+                nam
+                commodi, molestias neque suscipit a quidem consequatur aperiam quasi magni eligendi, eius unde placeat
+                repellat
+                id asperiores. Saepe, culpa beatae! Mollitia delectus a labore, aut eaque quibusdam molestias
+                reprehenderit
+                ipsum quisquam voluptas!</div>
+        </div>
+        <div class="video-suggestions">
+            <div class="suggestion">
+                <div>
+                    <img id="img" class="style-scope yt-img-shadow" alt="" width="168" src="https://i.ytimg.com/vi/KJgsSFOSQv0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLC56YnzviePZfMLdk8rTrpLM2rffA">
+                </div>
+
+                <div class="suggestion-metadata">
+                    <h5>C Programming Tutorial for beginners</h5>
+                    <p>Channel name</p>
+                </div>
+            </div>
+            <span class="timestamp"><small><strong>10:02:01</strong></small></span>
+        </div>
     </div>
-    <div class="video-suggestions"></div>
-  </div>
 
 </body>
-</html>
 
+</html>

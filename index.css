@@ -111,16 +111,15 @@ html, body {
 /* Left video container */
 .left {
     background: gray;
-    width: 71.4%;
+    width: 76.4%;
     height: 100%;
 
 }
 
 /* actual Video */
 #video {
-    background: aqua;
     width: 100%;
-    aspect-ratio: 16/9;
+    height: 40vw;
 }
 
 /* video information  */
@@ -135,10 +134,9 @@ html, body {
 /* video title and views */
 .video-title-metadata {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     color: white;
-    background-color: white;
-    height: 50%;
     align-self: flex-start;
 }
 
@@ -149,17 +147,16 @@ html, body {
 
 /* video controls */
 .video-controls {
-    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: aqua;
     align-self: flex-end;
 }
 
 /* video control buttons */ 
 .video-controls-buttons {
     display: flex;
+    padding-bottom: 6px;
 }
 
 /* individual buttons */
@@ -168,8 +165,9 @@ html, body {
     align-items: center;
     padding-right: 18px;
 }
+
 .like-button {
-    width: 30px;
+    width: 20px;
 }
 
 /* likes count */
@@ -182,6 +180,83 @@ html, body {
     background-color: purple;
 }
 
+/* uploaders info */
+.user-metadata {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* user wrapper for image and name */
+.user-wrapper {
+    display: flex;
+}
+
+/* user profile picture */
+.profile_picture {
+    border-radius: 100%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: teal;
+    padding-left: 1rem;
+}
+
+/* uploaders name */ 
+.username {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+}
+
+/* verfied icon */
+.verified-icon {
+    width: 14px;
+    padding-left: 4px;
+}
+
+/* user sub and join btn */
+.user-buttons {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    background-color: bisque;
+}
+
+/* button styling */
+.btn {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0, 195, 255);
+    height: 2rem;
+    padding: 0 20px 0 20px;
+}
+
+/* sub btn */
+.sub-btn {
+    margin-left: 10px;
+}
+
+/* description section */
+.description-section {
+    background-color: teal;
+    padding: 30px 0 30px 66px;
+}
+
+/* description */
+.description {
+    color: white;
+    font-weight: 500;
+}
+
+/* extend description */
+.description-more {
+    margin-top: 6px;
+}
 
 /* video comment section */
 .comment-section  {
@@ -191,17 +266,63 @@ html, body {
 /* Right side of main container */
 .video-suggestions {
     height: 100%;
-    width: calc(100% - 73.4%);
+    width: calc(100% - 76.4%);
     background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+/* individual videos suggested  */
+.suggestion {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: teal;
+}
+
+/* suggestion video name and channel */
+.suggestion-metadata {
+    padding-left: 8px;
 }
 
 
+/* video timestamps */
+.timestamp {
+    color: white;
+    background-color: black;
+    opacity: 0.9;
+    width: fit-content;
+    margin-top: -40px;
+    margin-left: 6rem;
+}
+
+
+/* hide suggestions when small */
 @media (max-width: 1000px) {
     .video-suggestions {
         display: none;
     }
 }
+/* maximize video width when small */
+@media (max-width: 1000px) {
+    .left {
+        width: 100%;
+    }
+    .main {
+        margin: 16px 20px 0 20px;
+    }
 
+    #video {
+        height: 50vw;
+    }
+}
+
+/* hide navbar content when small */
+@media (max-width: 650px) {
+    .search-container {
+        display: none;
+    }
+}
 
 
 
