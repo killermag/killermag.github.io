@@ -302,11 +302,10 @@ html, body {
     background-color: black;
     opacity: 0.85;
     color: white;
-    position: relative;
-    top: -0.9rem;
-    margin-left: 6.1rem;
-    padding: 0 2px;
     width: fit-content;
+    align-self: flex-end;
+    position: relative;
+    margin-right: 40rem;
 }
 
 /* video comment section */
@@ -464,11 +463,6 @@ html, body {
     color: white;
     background-color: black;
     opacity: 0.9;
-    position: relative;
-    top: -0.8rem;
-    padding: 0 1px 0 1px;
-    margin-left: 6.6rem;
-    width: fit-content;
 }
 
 
