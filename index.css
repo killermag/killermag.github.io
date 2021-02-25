@@ -4,6 +4,11 @@
     font-family: sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 html, body {
     background-color: violet;
     width: 100%;
@@ -98,7 +103,7 @@ html, body {
 
 /* Main container for content */
 .main {
-    margin: 16px 60px 0 40px;
+    margin: 16px 30px 0 20px;
     display: flex;
     background-color: wheat;
     justify-content: space-between;
@@ -258,11 +263,139 @@ html, body {
     margin-top: 6px;
 }
 
+/* small view suggestions */
+.small-view-suggestions {
+    display: none;
+}
+
+/* individual small view suggestions */
+.small-view-suggestion {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+/* actual video */
+.sv-suggestion-video {
+
+}
+
+/* suggested video metadata */
+.sv-suggestion-video-metadata {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* video comment section */
 .comment-section  {
     background-color: greenyellow;
 }
 
+/* Comment count and sorting */
+.comment-metadata {
+    display: flex;
+    align-items: center;
+    padding-top: 1.4rem;
+    background-color: blueviolet;
+}
+
+/* comment counts */
+.comment-count {
+}
+
+/* sort button */
+.sortby-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+/* sort logo */
+.sort-btn-logo {
+    width: 1.7rem;
+}
+
+/* new comment form */
+.comment-form {
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+/* commenter pic */
+.commenter-picture {
+    border-radius: 100%;
+    width: 3rem;
+}
+
+/* comment box */
+.comment-box {
+    background-color: cyan;
+    width: 100%;
+    padding-left: 0.8rem;
+}
+
+/* comment input */
+.comment-input {
+    background-color: yellow;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    height: 1.3rem;
+
+}
+
+/* comments */
+.comments {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+/* individual comments  */
+.comment {
+    padding-top: 1.5rem;
+    display: flex;
+}
+
+/* comment commenter */
+.commenter {
+    display: flex;
+    flex-direction: column;
+}
+
+/* comment body */
+.comment-body {
+    padding-top: 0.8rem;
+}
+
+/* comment controls */
+.comment-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+/* like controls */
+.like-controls {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* comment like count */
+.comment-like-count {
+    padding-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+/* dislike button */
+.dislike {
+    margin-right: 1rem;
+}
+                                    
 /* Right side of main container */
 .video-suggestions {
     height: 100%;
@@ -276,13 +409,22 @@ html, body {
 /* individual videos suggested  */
 .suggestion {
     display: flex;
-    margin-bottom: 10px;
     background-color: teal;
 }
 
 /* suggestion video name and channel */
 .suggestion-metadata {
     padding-left: 8px;
+}
+
+/* suggested video title */
+.video-title {
+    background-color: black;
+}
+
+/* suggestion channel name */
+.channel {
+    background-color: black;
 }
 
 
@@ -292,8 +434,6 @@ html, body {
     background-color: black;
     opacity: 0.9;
     width: fit-content;
-    margin-top: -40px;
-    margin-left: 6rem;
 }
 
 
@@ -303,8 +443,26 @@ html, body {
         display: none;
     }
 }
+
+/* shorten video width when screen smol */
+@media (max-width: 1500px) {
+    .left {
+        width: 68%
+    }
+
+    .video-suggestions {
+        width: calc(100% - 68%);
+    }
+}
+
 /* maximize video width when small */
 @media (max-width: 1000px) {
+    .small-view-suggestions {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.3rem;
+    }
+
     .left {
         width: 100%;
     }
@@ -323,6 +481,7 @@ html, body {
         display: none;
     }
 }
+
 
 
 
