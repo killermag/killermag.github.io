@@ -6,7 +6,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 html, body {
@@ -266,12 +266,14 @@ html, body {
 /* small view suggestions */
 .small-view-suggestions {
     display: none;
+    background-color: tomato;
 }
 
 /* individual small view suggestions */
 .small-view-suggestion {
-    padding-bottom: 10px;
     display: flex;
+    margin-bottom: -0.8rem;
+    background-color: cadetblue;
 }
 
 /* actual video */
@@ -283,8 +285,29 @@ html, body {
 .sv-suggestion-video-metadata {
     display: flex;
     flex-direction: column;
+    padding-left: 0.5rem;
 }
 
+/* sv video title */
+.sv-video-title {
+    background-color: white;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* sv video timestamp */
+.sv-suggestion-timestamp {
+    background-color: black;
+    opacity: 0.85;
+    color: white;
+    position: relative;
+    top: -0.9rem;
+    margin-left: 6.1rem;
+    padding: 0 2px;
+    width: fit-content;
+}
 
 /* video comment section */
 .comment-section  {
@@ -410,6 +433,7 @@ html, body {
 .suggestion {
     display: flex;
     background-color: teal;
+    margin-bottom: -1rem;
 }
 
 /* suggestion video name and channel */
@@ -419,12 +443,19 @@ html, body {
 
 /* suggested video title */
 .video-title {
-    background-color: black;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 /* suggestion channel name */
 .channel {
-    background-color: black;
+    background-color: white;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 
@@ -433,6 +464,10 @@ html, body {
     color: white;
     background-color: black;
     opacity: 0.9;
+    position: relative;
+    top: -0.8rem;
+    padding: 0 1px 0 1px;
+    margin-left: 6.6rem;
     width: fit-content;
 }
 
