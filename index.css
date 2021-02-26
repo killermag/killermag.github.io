@@ -54,21 +54,29 @@ html, body {
 
 /* Search bar */
 .search-bar {
+    padding: 0 0.6rem 0 0.6rem;
+    color: white;
+    outline: none;
+    border: 1px solid #303030;
+    background-color: #131313;
     width: 90%;
-    height: 1.6rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 100;
 }
 
 /* Search button */
 .search-button {
     display: flex;
     justify-content: center;
-    background-color: grey;
-    width: calc(100% - 90%)
+    background-color: #323232;
+    width: calc(100% - 86%)
 }
 
 /* Search logo */
 .logo {
     width: 24px;
+    fill: #686868;
 }
 
 /* Sign in box */ 
@@ -462,7 +470,6 @@ html, body {
 .video-suggestions {
     height: 100%;
     width: calc(100% - 76.4%);
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -471,8 +478,7 @@ html, body {
 /* individual videos suggested  */
 .suggestion {
     display: flex;
-    background-color: teal;
-    margin-bottom: -1rem;
+    margin-bottom: -0.5rem;
 }
 
 /* suggestions thumbnail */
@@ -484,6 +490,7 @@ html, body {
 /* suggestion video name and channel */
 .suggestion-metadata {
     padding-left: 8px;
+    color: #a8a8a8;
 }
 
 /* suggested video title */
@@ -492,11 +499,14 @@ html, body {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+    color: white;
+    font-weight: 600
+
 }
 
 /* suggestion channel name */
 .channel {
-    background-color: white;
+    color: #a8a8a8;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
