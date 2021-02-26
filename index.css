@@ -10,7 +10,7 @@ a {
 }
 
 html, body {
-    background-color: violet;
+    background-color: #191919;
     width: 100%;
     height: 100%;
 }
@@ -105,7 +105,6 @@ html, body {
 .main {
     margin: 16px 30px 0 20px;
     display: flex;
-    background-color: wheat;
     justify-content: space-between;
 
     height: calc(100% - (16px + 56px));
@@ -115,7 +114,6 @@ html, body {
 
 /* Left video container */
 .left {
-    background: gray;
     width: 76.4%;
     height: 100%;
 
@@ -132,8 +130,8 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: green;
     height: 5rem;
+    margin-top: 1.25rem;
 }
 
 /* video title and views */
@@ -169,20 +167,24 @@ html, body {
     display: flex;
     align-items: center;
     padding-right: 18px;
+    color: #909090;
 }
 
 .like-button {
     width: 20px;
+    fill: #909090;
 }
 
 /* likes count */
 .like-count {
     padding-left: 4px;
+    font-size: small;
+    font-weight: bold;
 }
 
 /* Video uploader section */
 .user-section {
-    background-color: purple;
+    padding-top: 1.17rem;
 }
 
 /* uploaders info */
@@ -205,21 +207,26 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: teal;
     padding-left: 1rem;
+    color: white;
 }
 
 /* uploaders name */ 
 .username {
     display: flex;
     align-items: center;
-    background-color: aqua;
 }
 
 /* verfied icon */
 .verified-icon {
     width: 14px;
     padding-left: 4px;
+    fill: #aaaaaa;
+}
+
+/* sub count */
+.subscriber-count {
+    color:  #9c9c9c;
 }
 
 /* user sub and join btn */
@@ -227,28 +234,38 @@ html, body {
     display: flex;
     align-items: center;
     padding-right: 10px;
-    background-color: bisque;
 }
 
 /* button styling */
 .btn {
+    cursor: pointer;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgb(0, 195, 255);
     height: 2rem;
-    padding: 0 20px 0 20px;
+    padding: 2px 16px 2px 16px;
+    border-radius: 2px;
+    color: white;
+}
+
+/* join button */
+.join-btn {
+    color: #3ea6ff;
+    border: 1px solid #3ea6ff;
+    padding-right: 1.3rem;
+    padding-left: 1.3rem;
 }
 
 /* sub btn */
 .sub-btn {
     margin-left: 10px;
+    background-color: #cc0202;
+    font-weight: medium;
 }
 
 /* description section */
 .description-section {
-    background-color: teal;
     padding: 30px 0 30px 66px;
 }
 
@@ -266,19 +283,18 @@ html, body {
 /* small view suggestions */
 .small-view-suggestions {
     display: none;
-    background-color: tomato;
 }
 
 /* individual small view suggestions */
 .small-view-suggestion {
     display: flex;
     margin-bottom: -0.8rem;
-    background-color: cadetblue;
 }
 
 /* actual video */
 .sv-suggestion-video {
-
+    display: flex;
+    flex-direction: column;
 }
 
 /* suggested video metadata */
@@ -290,11 +306,23 @@ html, body {
 
 /* sv video title */
 .sv-video-title {
-    background-color: white;
+    color: white;
+    font-size: small;
+    font-weight: 700;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+}
+
+/* sv channel */
+.sv-channel-name {
+    color: #9a9a9a;
+}
+
+/* sv date */
+.sv-date {
+    color: #9a9a9a;
 }
 
 /* sv video timestamp */
@@ -305,12 +333,13 @@ html, body {
     width: fit-content;
     align-self: flex-end;
     position: relative;
-    margin-right: 40rem;
+    top: -1.5rem;
+    margin-right: 10px;
+    padding: 0 3px 1px 3px;
 }
 
 /* video comment section */
 .comment-section  {
-    background-color: greenyellow;
 }
 
 /* Comment count and sorting */
@@ -318,11 +347,13 @@ html, body {
     display: flex;
     align-items: center;
     padding-top: 1.4rem;
-    background-color: blueviolet;
 }
 
 /* comment counts */
 .comment-count {
+    font-weight: 500;
+    color: white;
+    
 }
 
 /* sort button */
@@ -330,17 +361,19 @@ html, body {
     display: flex;
     align-items: center;
     margin-left: 2rem;
+    color: #909090;
+    font-weight: 600;
 }
 
 /* sort logo */
 .sort-btn-logo {
     width: 1.7rem;
+    fill: #909090;
 }
 
 /* new comment form */
 .comment-form {
     display: flex;
-    background-color: blue;
     align-items: center;
     padding-top: 1.5rem;
 }
@@ -348,25 +381,25 @@ html, body {
 /* commenter pic */
 .commenter-picture {
     border-radius: 100%;
-    width: 3rem;
+    width: 2.6rem;
 }
 
 /* comment box */
 .comment-box {
-    background-color: cyan;
     width: 100%;
     padding-left: 0.8rem;
 }
 
 /* comment input */
 .comment-input {
-    background-color: yellow;
+    color: white;
+    background-color: #191919;
     width: 100%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
+    border-bottom: 1px solid #303030;
     outline: none;
     height: 1.3rem;
+    padding-bottom: 6px;
 
 }
 
@@ -387,15 +420,21 @@ html, body {
 .commenter {
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 /* comment body */
 .comment-body {
     padding-top: 0.8rem;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 540;
 }
 
 /* comment controls */
 .comment-controls {
+    font-size: small;
+    color: #aaaaaa;
     display: flex;
     flex-direction: column;
 }
@@ -405,6 +444,7 @@ html, body {
     padding-top: 1rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 /* comment like count */
@@ -435,6 +475,12 @@ html, body {
     margin-bottom: -1rem;
 }
 
+/* suggestions thumbnail */
+.suggestion-thumbnail {
+    display: flex;
+    flex-direction: column;
+}
+
 /* suggestion video name and channel */
 .suggestion-metadata {
     padding-left: 8px;
@@ -463,6 +509,12 @@ html, body {
     color: white;
     background-color: black;
     opacity: 0.9;
+    align-self: flex-end;
+    width: fit-content;
+    margin-right: 10px;
+    position: relative;
+    top: -1.5rem;
+    padding: 0 3px 1px 3px;
 }
 
 
