@@ -1,0 +1,126 @@
+body {
+    font-family: 'AvenirNext',Avenir,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 0.9em; font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: #0077C5;
+}
+
+#top {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#left-side {
+    margin: 0;
+    padding: 0;
+    font-size: 0.95em;
+    font-weight: 100;
+}
+
+#top-container {
+    display: flex;
+}
+
+#left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#sign-in {
+    cursor: pointer;
+    margin-left: 0.8rem;
+    background-color: #0077C5; 
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 1rem;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.intuit-logo {
+    background-image: url(https://plugin.intuitcdn.net/identity-authn-core-ui/images/ecosystem_logos_new@2x-9448e6be.png); 
+    background-size: 562px 82px;
+    color: black;
+}
+
+
+main form li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.4rem;
+    margin-bottom: 1.9rem;
+}
+
+main form ul {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background: white;
+}
+
+fieldset {
+    border: none;
+    margin: 0 1.2rem;
+}
+
+input {
+    width: 18rem;
+    border: solid 1px rgba(128, 128, 128, 0.351);
+    border-radius: 3px;
+    height: 1.9rem;
+    outline: none;
+    padding: 0 0.4rem;
+    font-weight: 100;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+}
+
+
+small {
+    font-size: small;
+}
+
+a {
+    font-size: 0.95em;
+}
+
+#learn-more {
+    text-align: center;
+}
+
+
+#sine-btn {
+    width: 19rem;
+    cursor: pointer;
+    height: 2.8rem;
+    font-size: medium;
+    color: white;
+    background-color: #0077C5;
+    border: none;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+#policy-links:hover {
+    text-decoration: underline;
+}
+
+
+#icons {
+    padding-bottom: 1rem;
+}
