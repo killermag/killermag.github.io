@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    
+    <h2 style="text-align: center;">The Library App</h2>
+
+    <div id="newBookContainer" ><button id="newBookButton" class="hidden" style="margin-left: auto; margin-right: auto;">Create a New book?</button></div>
+    
+    <section id="storageType" style="">
+        <div id="container">
+            <div id="banner"></div>
+            <p style="text-align: center; color: white;">How would you like to Store your Data?</p>
+
+            <div id="buttonContainer">
+                <button id="storageButton">Local</button>
+                <button id="storageButton" disabled>Cloud</button>
+            </div>
+        </div>
+    </section>
+
+    <form id="newBookForm" >
+        <ul id="newBookList" class="hidden">
+            <label for="Title" style="font-family: serif;">Title</label>
+            <li><input type="text" name="Title" maxlength="32" class="styledInput" placeholder="Title"></li>
+
+            <label for="Title" style="font-family: serif;">Author</label>
+            <li><input type="text" name="Author" maxlength="30" class="styledInput" placeholder="Author"></li>
+
+            <label for="Title" style="font-family: serif;">Pages</label>
+            <li><input type="number" min="0" max="8000" name="Pages" maxlength="4" class="styledInput" placeholder="Pages"></li>
+
+            <li style="display: flex; align-content: center; margin-bottom: 1rem;">
+                <label for="Title" style="font-family: serif;">Read?</label>
+                <input id="checkbox" type="checkbox" name="read" id="checkbox">
+            </li>
+             
+            <input type="submit" id="submit" value="Create">
+            
+        </ul>
+    </form>
+
+    <section id="books-grid" style="display: none;"></section>
+
+    <script src="index.js"></script>
+</body>
+</html>
