@@ -1,0 +1,709 @@
+/* Default styles */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    all: unset;
+}
+
+body {
+    font-family: roboto;
+    font-weight: 300;
+    width: 100vw;
+    margin: 0; 
+    padding: 0 ;
+}
+
+:root {
+    --nav: #141414;
+    --strip: #fd3; 
+    --small: #8f8f8f;
+    --red: #ff4421;
+    --titles: #010101;
+    --card-mid: #ffece8;
+    --card-b: #fffaf7;
+    --card-txt: #666665;
+    --card-sm: #afaeae;
+    --card-icon: #1b1b1a;
+    --foot: #000000;
+    --foot-txt: #303030;
+    --border: #e9e9e9;
+    --redish: #ffece8;
+    --vanilla: #fffaf7;
+    --hr: #ffffff;
+    --bullet: #aaa; 
+    --social: #333;
+}
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* Default style end */
+
+nav {
+    display: flex; 
+    flex-direction: column; 
+    position: fixed;
+    z-index: 10;
+}
+
+/* top nav */
+.top-menu {
+    display: flex;
+    width: 100vw;
+    background: white;
+}
+
+/* logo container */
+.logo {
+    background: black;
+    padding: 1rem;
+    padding-top: 1.2rem;
+    width: 6rem;
+}
+
+/* Actual logo */
+.nav-logo {
+}
+
+.top-menu .sliver {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.top-menu .black-bar {
+    display: none;
+    justify-content: space-between;
+    color: var(--small);
+    background-color: var(--nav);
+    padding: 5px 0;
+    font-size: 12px;
+    padding-left: 5px;
+    font-weight: 500;
+}
+
+.top-menu .black-bar > * > * {
+    padding: 0 5px;
+}
+
+.top-menu .black-bar .left .first {
+    color: white;
+}
+
+.top-menu .white-bar {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.top-menu ul {
+    display: none; 
+    flex: 1;
+    font-family: Rajdhani;
+    align-items: center;
+
+    
+}
+
+.top-menu ul li {
+    margin: 0 10px;
+    font-weight: 500;
+    color: var(--small);
+}
+
+.burger {
+    color: var(--red);
+}
+
+.search-icon, .burger-icon {
+    display: flex;
+    align-items: center;
+    border-left: solid 1px rgb(211, 211, 211);
+    padding: 0 1.3rem;
+}
+
+.fa-search {
+    color: var(--card-sm); 
+}
+
+.yellow-strip {
+    text-align: center;
+    background: var(--strip);
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    padding: 1rem 10px;
+    text-overflow: ellipsis;
+}
+
+/* MAIN  */
+main {
+    display: grid;
+    padding-left: .8rem; 
+    padding-right: 1rem; 
+    gap: 1rem;
+}
+
+.wrapper {
+    max-width: 1192px;
+    margin: 0 auto;
+    padding: 0 1rem 0 1rem;
+}
+
+.headline {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin-top: 7rem;
+    gap: 5px;
+    color: white;
+}
+
+.headline .first-row, .headline .second-row > * {
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.headline .first-row {
+    background-image: linear-gradient(#0000000F, #000000D1) ,url(images/main/virus.png);
+    background-size: cover;
+    position: relative;
+}
+
+.first-row .color-gradient { 
+    position: absolute;
+    background-image: url(images/cover-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.first-row .logo {  
+    position: absolute;
+    top: 1rem;
+    width: 40%;
+    max-width: 500px;
+    background: none;
+    display:none;
+}
+
+.headline .second-row {
+    display: grid;
+    gap: 5px;
+    overflow: hidden;
+    grid-template-rows: 1fr 1fr;
+}
+
+.headline .second-row .image-1 {
+    background-image: linear-gradient(#0000000F, #000000D1) ,url(images/main/boost.png);
+    background-size: cover;
+}
+
+.headline .second-row .image-2 {
+    background-image: linear-gradient(#0000000F, #000000D1) , url(images/main/bow.png);
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.headline .first-row, .headline .second-row > * {
+    display: flex; 
+    flex-direction :column; 
+    justify-content: flex-end;
+    padding-top: 1rem;
+}
+
+.headline h1, .headline h6, .headline h5 {
+    z-index: 5;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.headline h5 {
+    font-family: Rajdhani;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.headline h1 {
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+.headline h6 {
+    color: var(--small);
+    font-size: .8rem;
+    display: flex;
+    align-items:center;
+}
+
+.headline h6 .time i {
+    font-size: 1rem;
+}   
+
+.headline h6 > * {
+    margin-left: 1rem;
+}
+
+/* HEADLINE END */
+
+
+/* Latest news */
+.latest-news {
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding: 1rem 0;
+    padding: 1.5rem 0;
+}
+
+.latest-news header, .funding-rounds header {
+    color: var(--red);
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    display: inline;
+    margin-bottom: 1rem;
+}
+
+.latest-news header h1::after, .funding-rounds header h1::after {
+    content: '';
+    width: .5rem; 
+    height: .5rem; 
+    display: inline-block;
+    transform: rotate(45deg);
+    border-top: solid 5px var(--red);
+    border-right: solid 5px var(--red);
+    margin-bottom: .2rem;
+}
+
+.news-item {
+    display: flex;
+}
+
+
+.news-item .image {
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: 180% auto;
+    width: 75px;
+    height: 75px;
+}
+
+.news-item.first .image{
+    background-image: url(images/latest\ news/1-copy-28-516x270.jpg);
+}
+
+.news-item.second .image{
+    background-image: url(images/latest\ news/header-image-the-homepod-with-a-screen-516x270.png);
+}
+
+.news-item.third .image{
+    background-image: url(images/latest\ news/PocketDrum-Bluetooth-Drum-Sticks-540x270.jpg);
+}
+
+.news-item.fourth .image{
+    background-image: url(images/main/1-copy-29-796x417.jpg);
+}
+
+.news-item .text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+
+.news-item .text strong{
+    font-weight: bold;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    line-height: 1rem;
+}
+
+.news-item .text small {
+    font-size: .65rem;
+    color: var(--card-txt);
+}
+
+/* Latest news END */
+
+/* Funding rounds */
+.funding-rounds {
+    display: grid;
+    gap: 1rem;
+}
+
+.last-card {
+    display: none;
+}
+
+.funding-rounds header {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+.funding-rounds header h1::after {
+    margin-bottom: 1px;
+    margin-left: .5rem;
+}
+
+.funding-rounds .info {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.funding-rounds .info > * {
+    margin-top: 1rem;
+}
+.funding-rounds .info li a {
+    color: var(--red);
+    font-size: .9rem;
+}
+
+.card {
+    background: linear-gradient(var(--red), var(--red) 22.5%, var(--redish) 22.5%, var(--redish) 50%, var(--vanilla) 50%, var(--vanilla));
+    /* background-color:red; */
+    /* padding: 1rem; */
+}
+
+.card hr {
+    border-top: var(--hr);
+}
+
+.card .head {
+    display: flex;
+    margin: 1rem 1rem 0 1rem;
+    padding-top: 1rem;
+}
+
+.card .head img {
+    width: 60px;
+    height: 60px;
+}
+
+.head > div {
+    display: flex; 
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.head div .title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head div .value {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.head .value {
+    margin-top: 2rem;
+}
+
+.head div .series {
+    padding-top: .2rem;
+    font-family: Rajdhani;
+    font-size: .8rem;
+    color:var(--small);
+}
+
+.card .market {
+    margin: 2rem 0 1rem 1rem;
+    display: grid;
+    gap: .5rem;
+    color: var(--small);
+    font-family: roboto;
+    font-size: .8rem;
+}
+
+.fa-briefcase, .fa-tag {
+    color: black;
+    margin-right: 5px;
+}
+
+.card .bottom {
+    margin: 0 1rem 1rem 1rem;
+    padding-bottom: .5rem;
+    font-size: .7rem;
+    color: var(--small);
+}
+
+/* END */
+
+/* Other popular stuff */
+
+.other-popular {
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.other-popular header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 -40px 90px 50px #0000009F; 
+    color: white;
+    font-weight: 500;
+    padding: 1rem;
+    height: 0;
+    padding: 75% 1rem 1rem 1rem;
+    display: flex; 
+    flex-direction: column;
+    justify-content:flex-end;
+    font-size: 1.3rem;
+
+}
+
+.other-item > h1 {
+    color: var(--red);
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.other-item > h1::after {
+    content: '';
+    height: .5rem;
+    width: .5rem;
+    display: inline-block;
+    transform: rotate(45deg);
+    border-top: solid 4px var(--red); 
+    border-right: solid 4px var(--red);
+    margin: 0 0 .2rem .2rem;
+}
+
+.other-popular h4 {
+    font-family: Rajdhani;
+    font-weight: lighter;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+.other-popular h6 {
+    font-size: .8rem;
+    color: var(--small);
+    font-weight: 400;
+    margin-top: .5rem;
+}
+
+.other-popular .middle {
+    color: var(--red);
+    background-color: var(--redish);
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-popular .middle .image {
+    width: 5rem; 
+    overflow: hidden;
+    position: relative;
+}
+
+.other-popular .middle .image img {
+    height: 5rem;
+    position: relative; 
+    right: 50%;
+}
+
+.other-item .middle .text {
+    flex: 1;
+    margin: 10px 10px 0 10px;
+    height: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.other-item .middle .text strong {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.other-item .end {
+    font-size: 12.8px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.other-item .end > * {
+    margin-bottom: 1rem;
+    border-bottom: solid 1px rgb(231, 231, 231);
+    padding-bottom: 10px;
+    display: inline-block;
+    text-indent: -.65em;
+    padding-left: .7em;
+    line-height: 15px;
+}
+
+.other-item .end li::before {
+    content: '• ';
+    font-weight: bold;   
+    color: var(--bullet);
+}
+
+/* Other popular stuff END */
+
+/* Latest deals */
+.latest-deals {
+    display: grid; 
+    gap: 1rem; 
+    margin-bottom: 1.5rem;
+}
+
+.latest-deals header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--red);
+    margin-bottom: 1rem;
+
+}
+
+.latest-deals header h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.latest-deals header h6 {
+    font-size: 14px;
+}
+
+.latest-deals .deal-cards {
+    display:flex; 
+}
+
+.deal-cards .deal-image {
+    width: 75px; 
+    height: 75px; 
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 40% 0;
+    margin-right: .8rem;
+}
+
+.deal-cards .text {
+    flex: 1;
+    display: flex; 
+    flex-direction: column;
+}
+
+.deal-cards .text p {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.deal-cards .price {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-family: sans-serif;
+}
+
+.deal-cards .striked {
+    text-decoration: line-through;
+    color: var(--small);
+    font-size: 11px;
+}
+
+.deal-cards .after-sale { 
+    padding-left: 5px;
+    color: var(--foot-txt);
+    font-size: 14px;
+    letter-spacing: .4px;
+}
+
+/* END */
+
+/* footer */
+
+footer {
+    color:var(--card-sm); 
+    margin-top: 2rem;
+}
+
+.links {
+    display: flex; 
+    flex-direction: column;
+    background-color: var(--card-icon);
+    font-family: Rajdhani; 
+    font-weight: 500; 
+    font-size: 15px;
+}
+
+.links .icons {
+    display: flex; 
+    justify-content: center;
+    margin: 2rem 1.5rem 0 1.5rem; 
+    flex-wrap: wrap;
+}
+
+.links .icons div {
+    background-color: var(--social);
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 3px 8px 3px 0;
+}
+
+.links .icons div i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.links .text {
+    display: flex;
+    justify-content: center;
+}
+
+.links .text ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 1.5rem;
+    justify-content: center;
+    line-height: 1.5rem;
+}
+
+.links .text ul li {
+    margin-right: 10px;
+}
+
+.copyright {
+    background-color: var(--foot);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+.copyright span {
+    display: block;
+}
+
+.copyright img {
+    width: 38px;
+}
+
+.copyright .stackpath {
+    vertical-align: middle;
+    width: 60px;
+}
+
+
+/* END */

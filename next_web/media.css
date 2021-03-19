@@ -1,0 +1,253 @@
+@media (min-width: 820px) {
+    main {
+        padding: 0;
+    }
+    /* Navbar */
+    .top-menu  ul {
+        display: flex; 
+    }
+
+    .headline {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: none;
+    }
+
+    .headline > * {
+        height: 30rem !important;
+    }
+
+    .headline > * strong {
+        font-size: 1.8rem;
+    }
+
+    .headline .second-row > * {
+        height: 15rem;
+        padding-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .latest-news {
+        display: flex; 
+        flex: 0 1 auto; 
+        flex-wrap: wrap;
+    }
+
+    .latest-news > * {
+        margin-right: .50rem;
+    }
+
+    .latest-news header {
+        flex-basis: 100%;
+    }
+
+    .latest-news .news-item {
+        flex-direction: column;
+        width: 32.318%; 
+        margin-bottom: 1rem;
+    }
+
+    .latest-news .news-item .image {
+        width: 100%;
+        padding-top: 50%; 
+        background-size: cover;
+        height: 0;
+
+    }
+
+    .latest-news .news-item .text {
+        padding-left: 0;
+    }
+
+    .headline h1 {
+        font-size: 1.5rem;
+    }
+
+    .funding-rounds {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .funding-rounds header {
+        grid-column: 1 / -1;
+    }
+
+    .funding-rounds .info {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        font-weight: 400;
+    }
+
+    .funding-rounds .info li a {
+        font-size: 1.2rem;
+    }
+
+   
+
+    .funding-rounds .info li:nth-child(2) {
+        border-right: solid 1.5px red;
+        border-left: solid 1.5px red;
+        padding: 0 1rem;
+    }
+
+    .funding-rounds .first {
+        margin-right: 1rem;
+    }
+    
+    .funding-rounds .last {
+        margin-left: 1rem;
+    }
+
+    .other-popular {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .latest-deals {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .latest-deals header {
+        grid-column: 1 / -1;
+    }
+
+    .deal-cards {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+
+    .deal-cards .deal-image {
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+        background-size: 100%;
+        background-position: cover;
+    }
+
+    .deal-cards .text {
+        padding-top: 10px;
+    }
+    .deal-cards .text p {
+        font-size: 1rem;
+    }
+
+    .deal-cards .text .price .striked {
+        text-decoration: line-through;
+        font-size: 12px;
+    }
+
+    .deal-cards .text .price .after-sale {
+        font-size: 15px;
+    }
+
+    .discount {
+        background-image: url(images/discount.svg);
+        width: 5rem;
+        height: 5rem;
+        position: absolute; 
+        right: 0;
+        color: black;
+        background-repeat: no-repeat;
+        font-weight: bold;
+        font-size: .8rem;
+        font-family: ;
+    }
+
+    .discount-percent {
+        transform: rotate(45deg);
+        position: absolute;
+        top: 1.5rem;
+        left: 20%;
+    }
+
+    .first-row h1 {
+        font-size: 2rem;
+    }
+
+    .second-row h1 {
+        font-size: 1.2rem;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .top-menu .black-bar {
+        display: flex; 
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    .search-icon {
+        padding: 0 10px;
+    }
+
+    .top-menu .white-bar {
+        justify-content: space-between;
+    }
+
+    footer .copyright > * {
+        display: inline;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .headline h1 {
+        font-size: 2rem;
+    }
+
+    .latest-news header {
+        margin-left: 5px;
+    }
+
+    .latest-news .news-item {
+        width: 23.6%; 
+        margin: 0 auto;
+
+    }
+
+    .latest-news .text strong {
+        font-size: 1.05rem;
+        line-height: 20px;
+    }
+
+    .funding-rounds {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .last-card {
+        display: block;
+    }
+
+    .other-popular {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .latest-deals {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .deal-cards .text p {
+        font-size: 1.12rem;
+    }
+
+    .deal-cards .text .price .striked {
+        text-decoration: line-through;
+        font-size: 14px;
+    }
+
+    .deal-cards .text .price .after-sale {
+        font-size: 17px;
+    }
+
+    .first-row .color-gradient {
+        display: block;
+    }
+
+    .first-row .logo {
+        display: block;
+    }
+
+}
