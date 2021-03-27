@@ -1,0 +1,39 @@
+$base-space: 0.5rem; 
+
+// GAP NOT IMPLEMENTED DUE TO SUPPORT ISSUES IN SAFARI!
+
+// WHOLE PADDING
+
+
+$direction: (
+    top: t,
+    bottom: b, 
+    left: s, 
+    right: e,
+);
+
+$boolean: true;
+@each $key, $value in $direction {
+     
+    @for $i from 0 through 6 {
+
+        @if ($boolean == true) {
+            .p-#{$i} {
+                padding: $base-space * $i;
+            }
+            .m-#{$i} {
+                margin: $base-space * $i;
+            }
+        }
+
+        .p#{$value}-#{$i} {
+            padding-#{$key}: $base-space * $i;
+        }
+
+        .m#{$value}-#{$i} {
+            margin-#{$key}: $base-space * $i;
+        }   
+    }
+
+    $boolean: false;
+}

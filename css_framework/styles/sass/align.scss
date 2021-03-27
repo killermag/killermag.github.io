@@ -1,0 +1,43 @@
+.center-h {
+    justify-content: center;
+}
+
+.center-v {
+    align-content: center;
+}
+
+.items-center-v {
+    align-items: center; 
+}
+
+.items-center-h {
+    justify-items: center;
+}
+
+$align: (start center end);
+
+@each $position in $align {
+    .items-#{$position}-v {
+        align-items: $position;
+    }
+    .items-#{$position}-h {
+        justify-items: $position;
+    }
+    
+    .#{$position}-h {
+        justify-content: $position;
+    }
+
+    .#{$position}-v {
+        align-content: $position;
+    }
+
+    .text-#{$position} {
+        text-align: $position;
+    }
+}
+
+
+
+
+

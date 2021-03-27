@@ -1,0 +1,83 @@
+@use "sass:list";
+
+
+// BREAKPOINTS 
+
+$breakpoints: (
+    sm: 0px,
+    md: 768px, 
+    lg: 1024px, 
+    xl: 1280px
+);
+
+
+// THE CONTAINER IS JUST A BOX WITH OR WITHOUT MARGIN
+%container {
+    display: flex;
+    max-width: 1400px; 
+    padding: 0.5rem;
+}
+
+.container {
+    margin: 0 auto;
+    @extend %container; 
+    @media (max-width: 1400px) {
+        width: 90%;
+    }
+}
+
+.container-max {
+    display: flex; 
+    @extend %container; 
+    @media (min-width: 1400px) {
+        margin: 0 auto;
+    }
+}
+
+
+
+// OUR ROW IS THE COLUMN GRID
+.row {
+    $spacing: 0.5rem;
+    display: grid; 
+    width: 100%;
+    padding: $spacing; 
+    grid-template-columns: repeat(12, 1fr);
+    gap: $spacing; 
+}
+
+
+
+
+// ITEMS WITH COLUMN SPANNING 
+@mixin column-size($length) {
+    grid-column: span $length; 
+}
+
+
+
+// DEFAULT COLUMNS IF DONT WANNA USE BREAKPOINTS
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include column-size($i);    
+    }
+}
+
+
+
+
+// BREAKPOINT COLUMNS
+@mixin column_breakpoint($breakpoint, $length) {
+   
+        @include column-size($length)
+}
+
+@each $size,  $breakpoint in $breakpoints {
+    @media (min-width: $breakpoint) {
+        @for $i from 1 through 12 {
+            .col-#{$size}-#{$i} {
+                @include column_breakpoint($size, $i)
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.flex {
+    display: flex; 
+}
+
+.flex-1 {
+    display: flex; 
+    > * {
+        flex: 1;
+    }
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+$space: (between around evenly);
+
+@each $i in $space {
+    .space-#{$space} {
+        justify-content: space-#{$space};
+    }
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}

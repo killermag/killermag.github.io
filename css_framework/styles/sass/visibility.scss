@@ -1,0 +1,11 @@
+$breakpoints: ( sm:0px, md:768px, lg:1024px, xl:1280px);
+$displays: ( none initial inherit block flex grid fixed table-cell table-column table-row inline inline-flex inline-table inline-grid inline-block);
+@each $key, $value in $breakpoints {
+    @each $display in $displays {
+        .#{$key}\:#{$display} {
+            @media (min-width: $value) {
+                display: $display;
+            }
+        }
+    }
+}

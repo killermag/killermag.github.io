@@ -1,0 +1,39 @@
+// FONTS
+@font-face {
+    font-family: norse;
+    src: url(norse.bold.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lexend:wght@300;400;500&family=Noto+Sans+JP:wght@100;300;400&family=Poppins:wght@100;200;300;400&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+$base: 0.5rem;
+
+
+// Font Families
+.family-lexend { font-family: 'Lexend', sans-serif ; }
+.family-lato { font-family: 'Lato' , sans-serif ; }
+.family-nsjp { font-family: 'Noto Sans JP' , sans-serif ; }
+.family-poppins { font-family: 'Poppins' , sans-serif ; }
+.family-roboto { font-family: 'Roboto' , sans-serif ; }
+.family-source_sans_pro { font-family: 'Source Sans Pro' , sans-serif ; }
+.family-norse { font-family: 'norse',sans-serif ; }
+
+// Font weights 
+$weight: ( 
+    font-thin: 100,
+    font-extralight: 200,
+    font-light: 300,
+    font-normal: 400,
+    font-medium: 500,
+    font-semibold: 600,
+    font-bold: 700,
+    font-extrabold: 800,
+    font-black: 900
+);
+
+@each $key, $value in $weight {
+    .#{$key} {
+        font-weight: $value;
+    }
+}
+
+
